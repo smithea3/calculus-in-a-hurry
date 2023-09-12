@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section>
+    <title>Summation Notation</title>
+    <p> The main idea of calculating integrals is simple: we want to calculate area. It is the
+        execution of that simple idea that makes the concept of integrals more interesting and
+        challenging to calculate. To calculate area under different functions, we will need to
+        symbol that mean "to add". In mathematics, we use the capital letter "S" in Greek <m>
+            (\Sigma</m>) to denote summation. </p>
+    <p> We can use this summation notation to short hand summation in this way. Say we wanted to
+        write the sum of the positive integers from 1 to 10. We can do this using summation notation
+        in the following way <me>\sum_{k=1}^{10} k.</me>
+    </p>
+    <p> In this example, the letter <m>k</m> is called the "index" of the summation. The value of <m>
+        k=1</m> is the initial value, and the value of <m>10</m> is the terminal value. Expanded
+        out, this summartion would look like this: <me>\sum_{k=1}^{10} k=1+2+3+4+5+6+7+8+9+10=55.</me>
+    </p>
+    <p>The index of the summation always increases by 1 each time. So, if you want to make it
+        interesting and count another way, you would have to think of a way to do so. Let's look at
+        the next example to see what this means.</p>
+    <example>
+        <statement>
+            <p>Find the sum of the first 10 even numbers.</p>
+        </statement>
+        <solution>
+            <p>Since we want to add the first <m>
+                    10</m> even numbers, we first need to figure out the expression that gives the
+                even numbers. Using <m>k</m> as the index again, if <m>2k</m> is the expression,
+                where <m>k=1</m> is the initial value and $k=10$ is the terminal value, then this
+                would give use the first ten even numbers. As a summation, this would look like <me>
+                \sum_{k=1}^{10} 2k=2+4+6+8+10+12+14+16+18+20=110$$
+                </me>
+            </p>
+            <p>If you look at this a little closer, then you see that we could factor out a 2 from
+                the expanded part of the equation and have <me>
+                    \sum_{k=1}^{10} 2k=2(1+2+3+4+5+6+7+8+9+10)=2\cdot55=110
+                </me></p>
+            <p>
+                This is an important property of summation that allows us to factor out common
+                factors like to to make certain computations easier.
+            </p>
+
+        </solution>
+    </example>
+
+
+</section>
