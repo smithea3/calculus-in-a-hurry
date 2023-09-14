@@ -22,6 +22,7 @@
         <statement>
             <p>Find the sum of the first 10 even numbers.</p>
         </statement>
+        <answer>110</answer>
         <solution>
             <p>Since we want to add the first <m>
                     10</m> even numbers, we first need to figure out the expression that gives the
