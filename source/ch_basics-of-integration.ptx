@@ -11,6 +11,6 @@
         learn some new notation that will be useful for writing certain calculations.
     </introduction>
 
-    <xi:include href="sec_summationNotation.ptx" />
+    <xi:include href="sec_summation-notation.ptx" />
 
 </chapter>

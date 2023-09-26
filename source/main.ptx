@@ -17,7 +17,7 @@
 
     <xi:include href="frontmatter.ptx" />
 
-    <xi:include href="ch_basicsOfIntegration.ptx" />
+    <xi:include href="ch_basics-of-integration.ptx" />
 
   </book>
 </pretext>
