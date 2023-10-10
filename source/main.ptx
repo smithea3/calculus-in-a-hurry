@@ -8,6 +8,8 @@
     </macros>
     <latex-image-preamble>
       \usepackage{tikz}
+      \usetikzlibrary{positioning,shapes,fit,arrows}
+      \definecolor{myblue}{RGB}{56,94,141}
     </latex-image-preamble>
   </docinfo>
 
@@ -18,6 +20,8 @@
     <xi:include href="frontmatter.ptx" />
 
     <xi:include href="ch_basics-of-integration.ptx" />
+
+    <xi:include href="ch-review-exercises.ptx" />
 
   </book>
 </pretext>

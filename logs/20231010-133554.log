@@ -1,0 +1,12 @@
+INFO    : PreTeXt project found in `/workspaces/calculus-in-a-hurry`.
+WARNING : Using CLI version 2.0.2 but project's `requirements.txt`
+WARNING : is configured to use 1.8.0. Consider either installing
+WARNING : CLI version 1.8.0 or running `pretext init --refresh`
+WARNING : to update `requirements.txt` to match 2.0.2.
+ERROR   : XInclude Error caused build to fail:
+ERROR   : <string>:0:0:WARNING:IO:IO_LOAD_ERROR: failed to load external entity "/workspaces/calculus-in-a-hurry/source/ch-review-worksheets.pts"
+/workspaces/calculus-in-a-hurry/source/main.ptx:22:0:ERROR:XINCLUDE:XINCLUDE_NO_FALLBACK: could not load /workspaces/calculus-in-a-hurry/source/ch-review-worksheets.pts, and no fallback was found
+CRITICAL: XML syntax for source file is invalid
+INFO    : ------------------------
+INFO    : While running pretext, the following errors occurred:
+

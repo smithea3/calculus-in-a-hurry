@@ -1,0 +1,28 @@
+INFO    : PreTeXt project found in `/workspaces/calculus-in-a-hurry`.
+WARNING : Using CLI version 2.0.3 but project's `requirements.txt`
+WARNING : is configured to use 1.8.0. Consider either installing
+WARNING : CLI version 1.8.0 or running `pretext init --refresh`
+WARNING : to update `requirements.txt` to match 2.0.3.
+INFO    : Since no target was supplied, we will use "web".
+
+INFO    : converting latex-image pictures from /workspaces/calculus-in-a-hurry/source/main.ptx to svg graphics for placement in /workspaces/calculus-in-a-hurry/generated-assets/latex-image
+INFO    : extracting latex-image pictures from /workspaces/calculus-in-a-hurry/source/main.ptx
+INFO    : string parameters passed to extraction stylesheet: {'publisher': '/workspaces/calculus-in-a-hurry/publication/publication.ptx'}
+INFO    : discovering source file's directory name: /workspaces/calculus-in-a-hurry/source
+INFO    : verifying and expanding input directory: /workspaces/calculus-in-a-hurry/source/../generated-assets
+INFO    : input directory expanded to absolute path: /workspaces/calculus-in-a-hurry/generated-assets
+INFO    : verifying and expanding input directory: /workspaces/calculus-in-a-hurry/source/../assets
+INFO    : input directory expanded to absolute path: /workspaces/calculus-in-a-hurry/assets
+INFO    : XSL conversion of /workspaces/calculus-in-a-hurry/source/main.ptx by /root/.ptx/xsl/extract-latex-image.xsl
+INFO    : comprehensive messages, warnings, and errors:
+INFO    : successful application of /root/.ptx/xsl/extract-latex-image.xsl
+INFO    : converting tikz-testing.tex to tikz-testing.pdf
+ERROR   : LaTeX compilation of tikz-testing.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+INFO    : Removing temporary directory /tmp/tmpow019hpf
+INFO    : Finished generating assets.
+
+INFO    : While running pretext, the following errors occurred:
+

@@ -10,7 +10,6 @@
         helpful tricks similar to how derivatives were calculated. Before we get started, we need to
         learn some new notation that will be useful for writing certain calculations.
     </introduction>
-
     <xi:include href="sec_summation-notation.ptx" />
 
 </chapter>

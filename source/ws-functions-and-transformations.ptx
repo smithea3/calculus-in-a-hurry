@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf-8'?>
+<section xml:id="ws-rational-expressions">
+    <title>Functions and Transformations Worksheet</title>
+    <objectives>
+        <ul>
+            <li>Insert objective here.</li>
+        </ul>
+    </objectives>
+    <introduction>
+        Functions are an essential part of mathematics and have a wide range of applications in the
+        real world. In this worksheet, we will explore the concept of functions and their
+        transformations. We will learn how to graph different types of functions and how to apply
+        various transformations to them.
+    </introduction>
+    <exercises>
+        <exercise>
+            <statement>
+                <p>Does the following image illustrate a function?</p>
+                <figure>
+                    <image xml:id="function-and-transformation-worksheet-q-1" width="25%">
+                        <latex-image>
+                            \begin{tikzpicture}[line width=1pt,>=latex]
+                            \sffamily
+                            \node (a1) {Anu};
+                            \node[below=of a1] (a2) {Ashu};
+                            \node[below=of a2] (a3) {Jenny};
+                            \node[below=of a3] (a4) {Cathy};
+                            \node[right=4cm of a1] (aux1) {};
+                            \node[below= 0.5cm of aux1] (b1) {Raaz};
+                            \node[below=of b1] (b2) {Jonathan};
+                            \node[below=of b2] (b3) {Fred};
+                            \node[right=4cm of a4] (aux2) {};
+                            \node[shape=ellipse,draw=myblue,minimum size=3cm,fit={(a1) (a4)}]{};
+                            \node[shape=ellipse,draw=myblue,minimum size=3cm,fit={(aux1) (aux2)}]{};
+                            \node[below=1.5cm of a4,font=\color{myblue}\Large\bfseries] {Domain};
+                            \node[below=1.5cm of aux2,font=\color{myblue}\Large\bfseries] {Range};
+                            \draw[->,myblue] (a1) -- (b1.170);
+                            \draw[->,myblue] (a2) -- (b1.190);
+                            \draw[->,myblue] (a3) -- (b2.175);
+                            \draw[->,myblue] (a4.20) -- (b2.190);
+                            \end{tikzpicture}
+                        </latex-image>
+                    </image>
+                </figure>
+            </statement>
+
+        </exercise>
+    </exercises>
+</section>

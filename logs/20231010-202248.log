@@ -1,0 +1,15 @@
+INFO    : PreTeXt project found in `/workspaces/calculus-in-a-hurry`.
+WARNING : Using CLI version 2.0.3 but project's `requirements.txt`
+WARNING : is configured to use 1.8.0. Consider either installing
+WARNING : CLI version 1.8.0 or running `pretext init --refresh`
+WARNING : to update `requirements.txt` to match 2.0.3.
+ERROR   : XInclude Error caused build to fail:
+ERROR   : /workspaces/calculus-in-a-hurry/source/ch-review-worksheets.ptx:14:9:ERROR:NAMESPACE:NS_ERR_QNAME: Failed to parse QName 'xi:'
+/workspaces/calculus-in-a-hurry/source/ch-review-worksheets.ptx:14:18:FATAL:PARSER:ERR_ATTRIBUTE_WITHOUT_VALUE: Specification mandates value for attribute include
+/workspaces/calculus-in-a-hurry/source/ch-review-worksheets.ptx:14:18:FATAL:PARSER:ERR_SPACE_REQUIRED: attributes construct error
+/workspaces/calculus-in-a-hurry/source/ch-review-worksheets.ptx:14:18:FATAL:PARSER:ERR_GT_REQUIRED: Couldn't find end of Start Tag xi: line 14
+/workspaces/calculus-in-a-hurry/source/main.ptx:22:0:ERROR:XINCLUDE:XINCLUDE_NO_FALLBACK: could not load /workspaces/calculus-in-a-hurry/source/ch-review-worksheets.ptx, and no fallback was found
+CRITICAL: XML syntax for source file is invalid
+INFO    : ------------------------
+INFO    : While running pretext, the following errors occurred:
+
