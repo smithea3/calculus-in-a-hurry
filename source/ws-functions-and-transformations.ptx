@@ -20,7 +20,6 @@
                     <image xml:id="function-and-transformation-worksheet-q-1" width="25%">
                         <latex-image>
                             \begin{tikzpicture}[line width=1pt,>=latex]
-                            \sffamily
                             \node (a1) {Anu};
                             \node[below=of a1] (a2) {Ashu};
                             \node[below=of a2] (a3) {Jenny};
@@ -43,7 +42,76 @@
                     </image>
                 </figure>
             </statement>
-
+        </exercise>
+        <exercise>
+            <statement>
+                <p>Does the following image illustrate a function?</p>
+                <figure>
+                    <image xml:id="function-and-transformation-worksheet-q-2" width="25%">
+                        <latex-image>
+                            \begin{tikzpicture}[line width=1pt,>=latex]
+                            \node (a1) {$3$};
+                            \node[below=of a1] (a2) {$4$};
+                            \node[below=of a2] (a3) {$9$};
+                            \node[right=4cm of a1] (b1) {$5$};
+                            \node[below= 0.5cm of b1] (b2) {$7$};
+                            \node[below=of b2] (b3) {$17$};
+                            \node[shape=ellipse,draw=myblue,minimum size=3cm,fit={(a1) (a3)}]{};
+                            \node[shape=ellipse,draw=myblue,minimum size=3cm,fit={(b1) (b3)}]{};
+                            \node[below=1.0cm of a3,font=\color{myblue}\Large\bfseries] {Domain};
+                            \node[below=1.0cm of b3,font=\color{myblue}\Large\bfseries] {Range};
+                            \draw[->,myblue] (a1) -- (b1.170);
+                            \draw[->,myblue] (a2) -- (b2.190);
+                            \draw[->,myblue] (a3) -- (b3.175);
+                            \end{tikzpicture}
+                        </latex-image>
+                    </image>
+                </figure>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>Does the following image illustrate a function?</p>
+                <figure>
+                    <image xml:id="function-and-transformation-worksheet-q-3" width="25%">
+                        <latex-image>
+                            \begin{tikzpicture}[line width=1pt,>=latex]
+                            \node (a1) {$-3$};
+                            \node[below=of a1] (a2) {$0$};
+                            \node[below=of a2] (a3) {$3$};
+                            \node[right=4cm of a1] (b1) {};
+                            \node[below= 0.5cm of b1] (b2) {$7$};
+                            \node[below=of b2] (b3) {$\pi$};
+                            \node[shape=ellipse,draw=myblue,minimum size=3cm,fit={(a1) (a3)}]{};
+                            \node[shape=ellipse,draw=myblue,minimum size=3cm,fit={(b1) (b3)}]{};
+                            \node[below=1.0cm of a3,font=\color{myblue}\Large\bfseries] {Domain};
+                            \node[below=1.0cm of b3,font=\color{myblue}\Large\bfseries] {Range};
+                            \draw[->,myblue] (a1) -- (b2.170);
+                            \draw[->,myblue] (a2) -- (b2.190);
+                            \draw[->,myblue] (a2) -- (b3.175);
+                            \end{tikzpicture}
+                        </latex-image>
+                    </image>
+                </figure>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>Does the following image illustrate a function?</p>
+                <figure>
+                    <image xml:id="function-and-transformation-worksheet-q-4" width="25%">
+                        <sageplot>
+                            var("x","y")
+                            implicit_plot(x+y^2-4,(x,-4,4),(y,-4,4),gridlines=True,detect_poles=True)
+                        </sageplot>
+                    </image>
+                </figure>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>Does the following equation represent a function? <me>y-3=\sqrt{x+8}</me></p>
+            </statement>
         </exercise>
     </exercises>
 </section>

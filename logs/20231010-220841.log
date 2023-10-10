@@ -1,0 +1,44 @@
+INFO    : PreTeXt project found in `/workspaces/calculus-in-a-hurry`.
+WARNING : Using CLI version 2.0.3 but project's `requirements.txt`
+WARNING : is configured to use 1.8.0. Consider either installing
+WARNING : CLI version 1.8.0 or running `pretext init --refresh`
+WARNING : to update `requirements.txt` to match 2.0.3.
+INFO    : converting latex-image pictures from /workspaces/calculus-in-a-hurry/source/main.ptx to svg graphics for placement in /workspaces/calculus-in-a-hurry/generated-assets/latex-image
+INFO    : extracting latex-image pictures from /workspaces/calculus-in-a-hurry/source/main.ptx
+INFO    : string parameters passed to extraction stylesheet: {'publisher': '/workspaces/calculus-in-a-hurry/publication/publication.ptx'}
+INFO    : discovering source file's directory name: /workspaces/calculus-in-a-hurry/source
+INFO    : verifying and expanding input directory: /workspaces/calculus-in-a-hurry/source/../generated-assets
+INFO    : input directory expanded to absolute path: /workspaces/calculus-in-a-hurry/generated-assets
+INFO    : verifying and expanding input directory: /workspaces/calculus-in-a-hurry/source/../assets
+INFO    : input directory expanded to absolute path: /workspaces/calculus-in-a-hurry/assets
+INFO    : XSL conversion of /workspaces/calculus-in-a-hurry/source/main.ptx by /root/.ptx/xsl/extract-latex-image.xsl
+INFO    : comprehensive messages, warnings, and errors:
+INFO    : successful application of /root/.ptx/xsl/extract-latex-image.xsl
+INFO    : converting function-and-transformation-worksheet-q-3.tex to function-and-transformation-worksheet-q-3.pdf
+INFO    : cropping function-and-transformation-worksheet-q-3.pdf to cropped-function-and-transformation-worksheet-q-3.pdf
+INFO    : renaming cropped-function-and-transformation-worksheet-q-3.pdf to function-and-transformation-worksheet-q-3.pdf
+INFO    : converting function-and-transformation-worksheet-q-3.pdf to function-and-transformation-worksheet-q-3.svg
+INFO    : converting function-and-transformation-worksheet-q-1.tex to function-and-transformation-worksheet-q-1.pdf
+INFO    : cropping function-and-transformation-worksheet-q-1.pdf to cropped-function-and-transformation-worksheet-q-1.pdf
+INFO    : renaming cropped-function-and-transformation-worksheet-q-1.pdf to function-and-transformation-worksheet-q-1.pdf
+INFO    : converting function-and-transformation-worksheet-q-1.pdf to function-and-transformation-worksheet-q-1.svg
+INFO    : converting function-and-transformation-worksheet-q-2.tex to function-and-transformation-worksheet-q-2.pdf
+INFO    : cropping function-and-transformation-worksheet-q-2.pdf to cropped-function-and-transformation-worksheet-q-2.pdf
+INFO    : renaming cropped-function-and-transformation-worksheet-q-2.pdf to function-and-transformation-worksheet-q-2.pdf
+INFO    : converting function-and-transformation-worksheet-q-2.pdf to function-and-transformation-worksheet-q-2.svg
+INFO    : Removing temporary directory /tmp/tmps36aer9a
+INFO    : Preparing to build into /workspaces/calculus-in-a-hurry/output/web.
+INFO    : discovering source file's directory name: /workspaces/calculus-in-a-hurry/source
+INFO    : verifying and expanding input directory: /workspaces/calculus-in-a-hurry/source/../generated-assets
+INFO    : input directory expanded to absolute path: /workspaces/calculus-in-a-hurry/generated-assets
+INFO    : verifying and expanding input directory: /workspaces/calculus-in-a-hurry/source/../assets
+INFO    : input directory expanded to absolute path: /workspaces/calculus-in-a-hurry/assets
+INFO    : Runestone Services (via PreTeXt repository): version 7.1.2
+INFO    : Runestone Services (using newer, via online CDN query): version 7.1.7
+INFO    : converting /workspaces/calculus-in-a-hurry/source/main.ptx to HTML in /tmp/tmp9yyaau7n
+INFO    : XSL conversion of /workspaces/calculus-in-a-hurry/source/main.ptx by /root/.ptx/xsl/pretext-html.xsl
+INFO    : comprehensive messages, warnings, and errors:
+INFO    : successful application of /root/.ptx/xsl/pretext-html.xsl
+INFO    : 
+Success! Run `pretext view` to see the results.
+
