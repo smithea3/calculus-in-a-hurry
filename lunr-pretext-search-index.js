@@ -34,7 +34,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.1",
   "title": "Functions and Transformations Worksheet",
-  "body": " Functions and Transformations Worksheet    Insert objective here.    Functions are an essential part of mathematics and have a wide range of applications in the real world. In this worksheet, we will explore the concept of functions and their transformations. We will learn how to graph different types of functions and how to apply various transformations to them.    Does the following image illustrate a function?         "
+  "body": " Functions and Transformations Worksheet    Insert objective here.    Functions are an essential part of mathematics and have a wide range of applications in the real world. In this worksheet, we will explore the concept of functions and their transformations. We will learn how to graph different types of functions and how to apply various transformations to them.    Does the following image illustrate a function?         Does the following image illustrate a function?         Does the following image illustrate a function?         Does the following image illustrate a function?         Does the following equation represent a function?    "
 },
 {
   "id": "objectives-1",
@@ -53,6 +53,42 @@ var ptx_lunr_docs = [
   "number": "2.1.1",
   "title": "",
   "body": " Does the following image illustrate a function?       "
+},
+{
+  "id": "exercise-2",
+  "level": "2",
+  "url": "ws-rational-expressions.html#exercise-2",
+  "type": "Exercise",
+  "number": "2.1.2",
+  "title": "",
+  "body": " Does the following image illustrate a function?       "
+},
+{
+  "id": "exercise-3",
+  "level": "2",
+  "url": "ws-rational-expressions.html#exercise-3",
+  "type": "Exercise",
+  "number": "2.1.3",
+  "title": "",
+  "body": " Does the following image illustrate a function?       "
+},
+{
+  "id": "exercise-4",
+  "level": "2",
+  "url": "ws-rational-expressions.html#exercise-4",
+  "type": "Exercise",
+  "number": "2.1.4",
+  "title": "",
+  "body": " Does the following image illustrate a function?       "
+},
+{
+  "id": "exercise-5",
+  "level": "2",
+  "url": "ws-rational-expressions.html#exercise-5",
+  "type": "Exercise",
+  "number": "2.1.5",
+  "title": "",
+  "body": " Does the following equation represent a function?  "
 }
 ]
 
