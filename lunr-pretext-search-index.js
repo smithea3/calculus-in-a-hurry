@@ -26,6 +26,33 @@ var ptx_lunr_docs = [
   "number": "1.1.1",
   "title": "",
   "body": "  Find the sum of the first 10 even numbers.   110   Since we want to add the first even numbers, we first need to figure out the expression that gives the even numbers. Using as the index again, if is the expression, where is the initial value and is the terminal value, then this would give use the first ten even numbers. As a summation, this would look like   If you look at this a little closer, then you see that we could factor out a 2 from the expanded part of the equation and have   This is an important property of summation that allows us to factor out common factors like to to make certain computations easier.   "
+},
+{
+  "id": "ws-rational-expressions",
+  "level": "1",
+  "url": "ws-rational-expressions.html",
+  "type": "Section",
+  "number": "2.1",
+  "title": "Functions and Transformations Worksheet",
+  "body": " Functions and Transformations Worksheet    Insert objective here.    Functions are an essential part of mathematics and have a wide range of applications in the real world. In this worksheet, we will explore the concept of functions and their transformations. We will learn how to graph different types of functions and how to apply various transformations to them.    Does the following image illustrate a function?         "
+},
+{
+  "id": "objectives-1",
+  "level": "2",
+  "url": "ws-rational-expressions.html#objectives-1",
+  "type": "Objectives",
+  "number": "2.1",
+  "title": "",
+  "body": "  Insert objective here.   "
+},
+{
+  "id": "exercise-1",
+  "level": "2",
+  "url": "ws-rational-expressions.html#exercise-1",
+  "type": "Exercise",
+  "number": "2.1.1",
+  "title": "",
+  "body": " Does the following image illustrate a function?       "
 }
 ]
 
