@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Calculus II Differential Equations Exam Review</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Calculus">
+<meta property="book:author" content="Ethan A. Smith">
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        },
+        ""
+      ]
+    }
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script>// Make *any* pre with class 'sagecell-sage' an executable Sage cell
+// Their results will be linked, only within language type
+sagecell.makeSagecell({
+  "inputLocation": "pre.sagecell-sage",
+  "linked": true,
+  "linkKey": "linked-sage",
+  "autoeval": false,
+  "languages": [
+    "sage"
+  ],
+  "evalButtonText": "Evaluate (Sage)"
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.31/pretext_search.js"></script><link href="https://pretextbook.org/css/0.81/pretext_search.css" rel="stylesheet" type="text/css">
+<script>js_version = 0.31</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.31/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.31/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.31/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+<link href="https://pretextbook.org/css/0.81/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.81/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.81/shell_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.81/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.81/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.81/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.81/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.81/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.81/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.81/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" class="logo-link" target="_blank" href=""></a><div class="title-container">
+<h1 class="heading"><a href="my-great-book.html"><span class="title">Calculus:</span> <span class="subtitle">For People in a Hurry</span></a></h1>
+<p class="byline">Ethan A. Smith</p>
+</div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="section-1.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch_basicsOfIntegrals.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="ch-review-exercises.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural contains-active toc-item-list">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ch_basicsOfIntegrals.html" class="internal"><span class="codenumber">1</span> <span class="title">Basics of Integrals</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-1.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Summation Notation</span></a></div></li>
+<li class="toc-item toc-section active">
+<div class="toc-title-box"><a href="sec-differential-equations-test-review.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Calculus II Differential Equations Exam Review</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-differential-equations-test-review.html#exercises-1" class="internal"><span class="codenumber">1.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-review-exercises.html" class="internal"><span class="codenumber">2</span> <span class="title">Review Exercieses</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ws-rational-expressions.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Functions and Transformations Worksheet</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ws-rational-expressions.html#exercises-2" class="internal"><span class="codenumber">2.1</span> <span class="title">Exercises</span></a></div></li></ul>
+</li></ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-differential-equations-test-review"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">1.2</span><span class="space"> </span><span class="title">Calculus II Differential Equations Exam Review</span>
+</h2>
+<section class="introduction" id="introduction-2"><div class="para" id="p-9">This is a review for the differential equations section of a one-semester Calculus II course.</div></section><section class="exercises" id="exercises-1"><h3 class="heading hide-type">
+<span class="type">Exercises</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Exercises</span>
+</h3>
+<article class="exercise exercise-like" id="exercise-1"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
+<div class="introduction" id="introduction-3">Consider the differential equation <span class="process-math">\(\displaystyle y'=y-4x.\)</span>
+</div>
+<article class="task exercise-like" id="task-1"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="p-10">Sketch the slope field for the differential equation using technology.</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-2" id="solution-2"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-2"><div class="solution solution-like"><div class="para" id="p-11"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/sageplot/image-1.svg" role="img" class="contained"></div></div></div></div>
+</div></article><article class="task exercise-like" id="task-2"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="p-12">Solve the first order linear differential equation and find the particular solution through the initial value of <span class="process-math">\((1, 1)\text{.}\)</span>
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-3" id="solution-3"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-3"><div class="solution solution-like">
+<div class="para logical" id="p-13">
+<div class="para">Begin by writing the equation as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+y'-y=4x\text{.}
+\end{equation*}
+</div>
+<div class="para">Now, we can identify the integrating factor <span class="process-math">\(\displaystyle\mu(x)=e^{\int
+p(x)\,dx}=e^{\int(-1)\,dx}=e^{-x}\text{,}\)</span> where <span class="process-math">\(p(x)=-1\text{.}\)</span>
+</div>
+</div> <div class="para logical" id="p-14">
+<div class="para">Using the formula derived in class, we have</div>
+<div class="displaymath process-math" id="md-1">
+\begin{align*}
+y(x) \amp = \frac{1}{\mu(x)}\int \mu(x)p(x)\,dx\\
+\amp = \frac{1}{e^{-x}}\int (e^{-x}(-4x))\,dx\\
+\amp = -4e^x\int(xe^{-x})\,dx \\
+\amp = -4e^x(-xe^{-x}-e^{-x}+C)\\
+\amp = 4x+4+C_1e^x
+\end{align*}
+</div>
+</div> <div class="para" id="p-15">Using the initial condition given, we find that <span class="process-math">\(C_1=-7e^{-1}\text{.}\)</span> Therefore, out specific solution is <span class="process-math">\(\displaystyle\boxed{4x+4-7e^{x-7}}\)</span> .</div>
+</div></div>
+</div></article><article class="task exercise-like" id="task-3"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="p-16">Sketch your answer from (b) on top of the slope field from (a).</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-4" id="solution-4"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-4"><div class="solution solution-like"><div class="para" id="p-17"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/sageplot/image-2.svg" role="img" class="contained"></div></div></div></div>
+</div></article></article><article class="exercise exercise-like" id="exercise-2"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
+<div class="para" id="p-18">Use Euler’s Method to make a table of values for the approximate solution of the following differential equation with specified intitial value. Use 10 steps and a step size of 0.10.</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-5" id="solution-5"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-5"><div class="solution solution-like"><div class="para" id="p-19"><pre class="ptx-sagecell sagecell-sage" id="sage-1"><script type="text/x-sage"># Change the value of n to increase the number of points generated.
+numOfSteps = 10
+n = list(range(0,numOfSteps+1))
+
+# Change these values based on the initial values given.
+x_0 = 0
+y_0 = 3
+h = 0.10
+
+# Change this function to be your differential equation.
+f(x,y)=3*x-2*y
+
+#__    __     ___     ____     __  __    __    __  __      ___     __
+#||    ||    // \\    || \\    ||\ ||    ||    ||\ ||     // \\    ||
+#\\ /\ //    ||=||    ||_//    ||\\||    ||    ||\\||    (( ___    ||
+# \V/\V/     || ||    || \\    || \||    ||    || \||     \\_||    ..
+
+### DO NOT CHANGE UNLESS YOU KNOW PYTHON AND SAGEMATH! ###
+listOfXValues = [x_0]
+listOfYValues = [y_0]
+points = [(x_0, y_0)]
+for i in n:
+    listOfXValues.append(listOfXValues[i]+h)
+    listOfYValues.append(listOfYValues[i]+h*f(listOfXValues[i],listOfYValues[i]))
+    points.append((listOfXValues[i]+h, listOfYValues[i]+h*f(listOfXValues[i],listOfYValues[i])))
+
+n.insert(0, "$n$")
+listOfXValues.insert(0, "$x_n$")
+listOfYValues.insert(0, "$y_n$")
+
+pretty_print(table(
+    [n, listOfXValues, listOfYValues]
+).transpose())
+
+list_plot(points).show()
+</script></pre></div></div></div>
+</div></article><article class="exercise exercise-like" id="exercise-3"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
+<div class="para logical" id="p-20">
+<div class="para">Solve the differential equation.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+y'=x^2(y-1)
+\end{equation*}
+</div>
+</div></article><article class="exercise exercise-like" id="exercise-4"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
+<div class="para" id="p-21">Write the differential equation that models the following statement, then solve the differential equation.</div> <blockquote class="blockquote" id="blockquote-1">The rate of change <span class="process-math">\(P\)</span> with respect to time, <span class="process-math">\(t\text{,}\)</span> is proporitional to <span class="process-math">\(120-t\text{.}\)</span>
+</blockquote></article><article class="exercise exercise-like" id="exercise-5"><h4 class="heading"><span class="codenumber">5<span class="period">.</span></span></h4>
+<article class="task exercise-like" id="task-4"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="p-23">What is the uninhibited growth equation that models this growth?</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-6" id="solution-6"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-6"><div class="solution solution-like"><div class="para logical" id="p-24">
+<div class="para">Since there are initially 500 bacteria, we know that <span class="process-math">\(A_0=500\text{.}\)</span> This means we have the equation <span class="process-math">\(A(t)=500e^{kt}\text{.}\)</span> Knowing that after one hour there are 800 bacteria, we also know that <span class="process-math">\(A(1)=500e^{k\cdot1}=800\text{.}\)</span> Solving for <span class="process-math">\(k\)</span> give the value of <span class="process-math">\(k=\ln(8/5)\text{.}\)</span> Substitution that back into the equation, and with some simplification, we find that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A(t)=500\left(\frac{8}{5}\right)^t.
+\end{equation*}
+</div>
+</div></div></div>
+</div></article><article class="task exercise-like" id="task-5"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="p-25">How many bacteria will be present in the culture after 5 hours?</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-7" id="solution-7"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-7"><div class="solution solution-like"><div class="para logical" id="p-26">
+<div class="para">Using the formula that we found in the last part, we have that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A(5)=500(8/5)^5=5242.88.
+\end{equation*}
+</div>
+</div></div></div>
+</div></article><article class="task exercise-like" id="task-6"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="p-27">How long until thre are 20,000 bacteria? Round your answer to three decimal places.</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-8" id="solution-8"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-8"><div class="solution solution-like"><div class="para logical" id="p-28">
+<div class="para">To find the time, we set the growth equation equal to the number of bacteria and solve for <span class="process-math">\(t\text{.}\)</span>
+</div>
+<div class="displaymath process-math" id="md-2">
+\begin{align*}
+500(8/5)^t \amp = 20000 \\
+(8/5)^t \amp =  40\\
+t \amp = \frac{\ln(40)}{\ln(8/5)} \\
+t \amp \approx 7.849\text{ hours} 
+\end{align*}
+</div>
+</div></div></div>
+</div></article></article><article class="exercise exercise-like" id="exercise-6"><h4 class="heading"><span class="codenumber">6<span class="period">.</span></span></h4>
+<div class="introduction" id="introduction-4"><div class="para" id="p-29">How much money must be invested today at 12% interest compounded quarterly in order to have $20,000 in 10 years? Additionally, how long will it take for $5,000 to double if the $5,000 is invested at 7% compounded continously?</div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-9" id="solution-9"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-9"><div class="solution solution-like">
+<div class="para logical" id="p-30">
+<div class="para">(1) For the first part of this question, since we want to determine an end amount, we should first look at the equation for this account, where the only unknown variable is the starting amount, which we’ll call <span class="process-math">\(A_0\text{.}\)</span> Therefore, the growth equation for this investment is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A(t)=A_0\left(1+\frac{0.12}{4}\right)^{4\cdot t} = A_0(1.03)^{4t} = A_0(1.1255)^{t}
+\end{equation*}
+</div>
+</div> <div class="para logical" id="p-31">
+<div class="para">Setting this equation equal to 20000 and using 10 for the years, we can solve for <span class="process-math">\(A_0\text{.}\)</span> I will use the <span class="process-math">\(A_0(1.03)^{4t}\)</span> version of the equation to ensure the greatest level of accuracy.</div>
+<div class="displaymath process-math" id="md-3">
+\begin{align*}
+A_0(1.03)^{4\cdot 10} \amp = 20000 \\
+A_0 \amp = \frac{20000}{(1.03)^{40}} \\
+A_0 \amp \approx  6131.14 \text{ (rounded to the nearest penny)}
+\end{align*}
+</div>
+</div> <div class="para logical" id="p-32">
+<div class="para">(2) To answer the second part of the question, we consider the formula for continous compounding, which is <span class="process-math">\(\displaystyle A(t)=A_0e^{rt}\text{.}\)</span> Furthermore, since we want the investment to double to $10,000, and we start with $5,000, we set the equation equal to $10,000 with the given rate and solve for <span class="process-math">\(t\text{.}\)</span>
+</div>
+<div class="displaymath process-math" id="md-4">
+\begin{align*}
+5000e^{0.07t} \amp = 10000 \\
+e^{0.07t} \amp = 2\\
+0.07t \amp = \ln(2) \\
+t \amp = \frac{\ln(2)}{0.07} \\
+t \amp \approx 9.902 \text{ (rounded to three decimal places)} 
+\end{align*}
+</div>
+</div>
+</div></div></article><article class="exercise exercise-like" id="exercise-7"><h4 class="heading"><span class="codenumber">7<span class="period">.</span></span></h4>
+<div class="introduction" id="introduction-5"><div class="para" id="p-33">Environmentalists often capture an endangered species and transport the species to a controlled environment where the species can produce offspring and regenerate its population. Suppose that six American bald eagles are captured, transported to a wildlife reserve in Montana, and set free. Based on experience, the environmentalists expect the population to grow according to the model <span class="process-math">\(\displaystyle P(t)=\frac{500}{1+82.33e^{-0.162t}}\text{,}\)</span> where <span class="process-math">\(t\)</span> is measured in years.</div></div>
+<article class="task exercise-like" id="task-7"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="p-34">Determine the carrying capacity of the environment.</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-10" id="solution-10"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-10"><div class="solution solution-like"><div class="para" id="p-35">The carrying capacity in the form this model is written is 500.</div></div></div>
+</div></article><article class="task exercise-like" id="task-8"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="p-36">What is the growth rate of the bald eagle?</div></article><article class="task exercise-like" id="task-9"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="p-37">What is the population after 3 years?</div></article><article class="task exercise-like" id="task-10"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="p-38">When will the population be 300 eagles?</div></article><article class="task exercise-like" id="task-11"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="p-39">How long does it take for the population to reach one-half of the carrying capacity?</div></article></article></section></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="section-1.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-review-exercises.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
+</div>
+</body>
+</html>

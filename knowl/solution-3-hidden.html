@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math"><div class="solution solution-like">
+<div class="para logical">
+<div class="para">Begin by writing the equation as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+y'-y=4x\text{.}
+\end{equation*}
+</div>
+<div class="para">Now, we can identify the integrating factor <span class="process-math">\(\displaystyle\mu(x)=e^{\int
+p(x)\,dx}=e^{\int(-1)\,dx}=e^{-x}\text{,}\)</span> where <span class="process-math">\(p(x)=-1\text{.}\)</span>
+</div>
+</div> <div class="para logical">
+<div class="para">Using the formula derived in class, we have</div>
+<div class="displaymath process-math">
+\begin{align*}
+y(x) \amp = \frac{1}{\mu(x)}\int \mu(x)p(x)\,dx\\
+\amp = \frac{1}{e^{-x}}\int (e^{-x}(-4x))\,dx\\
+\amp = -4e^x\int(xe^{-x})\,dx \\
+\amp = -4e^x(-xe^{-x}-e^{-x}+C)\\
+\amp = 4x+4+C_1e^x
+\end{align*}
+</div>
+</div> <div class="para">Using the initial condition given, we find that <span class="process-math">\(C_1=-7e^{-1}\text{.}\)</span> Therefore, out specific solution is <span class="process-math">\(\displaystyle\boxed{4x+4-7e^{x-7}}\)</span> .</div>
+</div></body>
+</html>
