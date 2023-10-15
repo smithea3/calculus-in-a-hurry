@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-differential-equations-test-review">
+    <title>Calculus II Differential Equations Exam Review</title>
+    <introduction>
+        <p>
+            This is a review for the differential equations section of a one-semester Calculus II course.
+        </p>
+    </introduction>
+    <exercises>
+        <exercise>
+            <introduction>Consider the differential equation <m>\displaystyle y'=y-4x.</m></introduction>
+            <task>
+                <statement>
+                    <p>
+                        Sketch the slope field for the differential equation using technology.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        <image>
+                            <sageplot>
+                                x,y = var("x", "y")
+                                plot_slope_field(y-4*x, (x,-5,5), (y,-5,5))
+                            </sageplot>
+                        </image>
+                    </p>
+                </solution>
+            </task>
+            <task>
+                <statement>
+                    <p> Solve the first order linear differential equation and find the particular
+                        solution through the initial value of <m>(1, 1)</m>. </p>
+                </statement>
+                <solution>
+                    <p> Begin by writing the equation as <me>y'-y=4x</me>. Now, we can identify the
+                        integrating factor <m>\displaystyle\mu(x)=e^{\int
+                        p(x)\,dx}=e^{\int(-1)\,dx}=e^{-x}</m>, where <m>p(x)=-1</m>. </p>
+                    <p> Using the formula derived in class, we have <md>
+                            <mrow>y(x) \amp = \frac{1}{\mu(x)}\int \mu(x)p(x)\,dx</mrow>
+                            <mrow> \amp = \frac{1}{e^{-x}}\int (e^{-x}(-4x))\,dx</mrow>
+                            <mrow> \amp = -4e^x\int(xe^{-x})\,dx </mrow>
+                            <mrow> \amp = -4e^x(-xe^{-x}-e^{-x}+C)</mrow>
+                            <mrow> \amp = 4x+4+C_1e^x</mrow>
+                        </md>
+                    </p>
+                    <p> Using the initial condition given, we find that <m>C_1=-7e^{-1}</m>.
+                        Therefore, out specific solution is <m>\displaystyle\boxed{4x+4-7e^{x-7}}</m>
+                        .</p>
+                </solution>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        Sketch your answer from (b) on top of the slope field from (a).
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        <image>
+                            <sageplot>
+                                x,y = var("x", "y")
+                                plot_slope_field(y-4*x, (x,-5,5),(y,-5,5),xmax=-5,xmin=5,ymin=-5,ymax=5)+plot(4*x-7*e^(x-1)+4,x,-3,2,thickness=3)
+                            </sageplot>
+                        </image>
+                    </p>
+                </solution>
+            </task>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    Use Euler's Method to make a table of values for the approximate solution of the
+                    following differential equation with specified intitial value. Use 10 steps and
+                    a step size of 0.10.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <sage>
+                        <input>
+                            # Change the value of n to increase the number of points generated.
+                            numOfSteps = 10
+                            n = list(range(0,numOfSteps+1))
+
+                            # Change these values based on the initial values given.
+                            x_0 = 0
+                            y_0 = 3
+                            h = 0.10
+
+                            # Change this function to be your differential equation.
+                            f(x,y)=3*x-2*y
+
+                            #__    __     ___     ____     __  __    __    __  __      ___     __
+                            #||    ||    // \\    || \\    ||\ ||    ||    ||\ ||     // \\    ||
+                            #\\ /\ //    ||=||    ||_//    ||\\||    ||    ||\\||    (( ___    ||
+                            # \V/\V/     || ||    || \\    || \||    ||    || \||     \\_||    ..
+                            
+                            ### DO NOT CHANGE UNLESS YOU KNOW PYTHON AND SAGEMATH! ###
+                            listOfXValues = [x_0]
+                            listOfYValues = [y_0]
+                            points = [(x_0, y_0)]
+                            for i in n:
+                                listOfXValues.append(listOfXValues[i]+h)
+                                listOfYValues.append(listOfYValues[i]+h*f(listOfXValues[i],listOfYValues[i]))
+                                points.append((listOfXValues[i]+h, listOfYValues[i]+h*f(listOfXValues[i],listOfYValues[i])))
+
+                            n.insert(0, "$n$")
+                            listOfXValues.insert(0, "$x_n$")
+                            listOfYValues.insert(0, "$y_n$")
+
+                            pretty_print(table(
+                                [n, listOfXValues, listOfYValues]
+                            ).transpose())
+
+                            list_plot(points).show()
+                        </input>
+                    </sage>
+
+                </p>
+            </solution>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    Solve the differential equation.
+                    <me>
+                        y'=x^2(y-1)
+                    </me>
+                    
+                </p>
+            </statement>            
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    Write the differential equation that models the following statement, then solve
+                    the differential equation.
+                </p>
+                <blockquote>
+                    The rate of change <m>P</m> with respect to time, <m>t</m>, is
+                    proporitional to <m>120-t</m>.
+                </blockquote>
+            </statement>
+        </exercise>
+        <exercise>
+            <statement>
+                <p> 
+                    A culture of barteria obeys the law of uninhibited growth and follows a model <m>
+                    A(t)=A_0e^{kt}</m>. If 500 bacteria are present initially, and there are 800 after
+                    one hour, answer the following questions. 
+                </p>
+            </statement>
+            <task>
+                <statement>
+                    <p>
+                        What is the uninhibited growth equation that models this growth?
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        Since there are initially 500 bacteria, we know that <m>A_0=500</m>. This means
+                        we have the equation <m>A(t)=500e^{kt}</m>. Knowing that after one hour there 
+                        are 800 bacteria, we also know that <m>A(1)=500e^{k\cdot1}=800</m>.
+                        Solving for <m>k</m> give the value of <m>k=\ln(8/5)</m>. Substitution that
+                        back into the equation, and with some simplification, we find that 
+                        <me>
+                            A(t)=500\left(\frac{8}{5}\right)^t.
+                        </me>
+                        
+                    </p>
+                </solution>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        How many bacteria will be present in the culture after 5 hours?
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        Using the formula that we found in the last part, we have that 
+                        <me>
+                            A(5)=500(8/5)^5=5242.88.
+                        </me>
+                    </p>
+                </solution>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        How long until thre are 20,000 bacteria? Round your answer to three decimal places.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        To find the time, we set the growth equation equal to the number of bacteria and
+                        solve for <m>t</m>.
+                        <md>
+                            <mrow>500(8/5)^t \amp = 20000 </mrow>
+                            <mrow>(8/5)^t \amp =  40</mrow>
+                            <mrow>t \amp = \frac{\ln(40)}{\ln(8/5)} </mrow>
+                            <mrow>t \amp \approx 7.849\text{ hours} </mrow>
+                        </md>
+                    </p>
+                </solution>
+            </task>
+        </exercise>
+        <exercise>
+            <introduction>
+                <p>
+                    How much money must be invested today at 12% interest compounded quarterly in
+                    order to have $20,000 in 10 years? Additionally, how long will it take for
+                    $5,000 to double if the $5,000 is invested at 7% compounded continously?
+                </p>
+            </introduction>
+            <solution>
+                <p>
+                    (1) For the first part of this question, since we want to determine an end amount,
+                    we should first look at the equation for this account, where the only
+                    unknown variable is the starting amount, which we'll call <m>A_0</m>.
+                    Therefore, the growth equation for this investment is 
+                    <me>
+                        A(t)=A_0\left(1+\frac{0.12}{4}\right)^{4\cdot t} = A_0(1.03)^{4t} = A_0(1.1255)^{t}
+                    </me>
+                </p>
+                <p>
+                    Setting this equation equal to 20000 and using 10 for the years, we can solve for <m>A_0</m>.
+                    I will use the <m>A_0(1.03)^{4t}</m> version of the equation to ensure the greatest level
+                    of accuracy.
+                    <md>
+                        <mrow> A_0(1.03)^{4\cdot 10} \amp = 20000 </mrow>
+                        <mrow> A_0 \amp = \frac{20000}{(1.03)^{40}} </mrow>
+                        <mrow> A_0 \amp \approx  6131.14 \text{ (rounded to the nearest penny)}</mrow>
+                    </md>
+                </p>
+                <p>
+                    (2) To answer the second part of the question, we consider the formula for continous
+                    compounding, which is <m>\displaystyle A(t)=A_0e^{rt}</m>. Furthermore, since we
+                    want the investment to double to $10,000, and we start with $5,000, we set the
+                    equation equal to $10,000 with the given rate and solve for <m>t</m>.
+                    <md>
+                        <mrow> 5000e^{0.07t} \amp = 10000 </mrow>
+                        <mrow> e^{0.07t} \amp = 2</mrow>
+                        <mrow> 0.07t \amp = \ln(2) </mrow>
+                        <mrow> t \amp = \frac{\ln(2)}{0.07} </mrow>
+                        <mrow> t \amp \approx 9.902 \text{ (rounded to three decimal places)} </mrow>
+                    </md>
+                </p>
+            </solution>
+        </exercise>
+        <exercise>
+            <introduction>
+                <p>
+                    Environmentalists often capture an endangered species and transport the species to a controlled
+                    environment where the species can produce offspring and regenerate its population. Suppose
+                    that six American bald eagles are captured, transported to a wildlife reserve in Montana,
+                    and set free. Based on experience, the environmentalists expect the population to grow
+                    according to the model <m>\displaystyle P(t)=\frac{500}{1+82.33e^{-0.162t}}</m>, where
+                    <m>t</m> is measured in years.
+                </p>
+            </introduction>
+            <task>
+                <statement>
+                    <p>
+                        Determine the carrying capacity of the environment.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        The carrying capacity in the form this model is written is 500.
+                    </p>
+                </solution>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        What is the growth rate of the bald eagle?
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        What is the population after 3 years?
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        When will the population be 300 eagles?
+                    </p>
+                </statement>
+            </task>
+            <task>
+                <statement>
+                    <p>
+                        How long does it take for the population to reach one-half of the carrying capacity?
+                    </p>
+                </statement>
+            </task>
+        </exercise>
+    </exercises>
+</section>

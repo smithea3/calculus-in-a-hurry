@@ -11,5 +11,6 @@
         learn some new notation that will be useful for writing certain calculations.
     </introduction>
     <xi:include href="sec_summation-notation.ptx" />
+    <xi:include href="sec-diff-eq-chapter-test-review.ptx" />
 
 </chapter>
