@@ -37,7 +37,7 @@
                         integrating factor <m>\displaystyle\mu(x)=e^{\int
                         p(x)\,dx}=e^{\int(-1)\,dx}=e^{-x}</m>, where <m>p(x)=-1</m>. </p>
                     <p> Using the formula derived in class, we have <md>
-                            <mrow>y(x) \amp = \frac{1}{\mu(x)}\int \mu(x)p(x)\,dx</mrow>
+                            <mrow>y(x) \amp = \frac{1}{\mu(x)}\int \mu(x)f(x)\,dx</mrow>
                             <mrow> \amp = \frac{1}{e^{-x}}\int (e^{-x}(-4x))\,dx</mrow>
                             <mrow> \amp = -4e^x\int(xe^{-x})\,dx </mrow>
                             <mrow> \amp = -4e^x(-xe^{-x}-e^{-x}+C)</mrow>
@@ -45,7 +45,7 @@
                         </md>
                     </p>
                     <p> Using the initial condition given, we find that <m>C_1=-7e^{-1}</m>.
-                        Therefore, out specific solution is <m>\displaystyle\boxed{4x+4-7e^{x-7}}</m>
+                        Therefore, out specific solution is <m>\displaystyle\boxed{4x+4-7e^{x-1}}</m>
                         .</p>
                 </solution>
             </task>
@@ -115,6 +115,7 @@
 
                             list_plot(points).show()
                         </input>
+                        <output></output>
                     </sage>
                 </p>
             </solution>
@@ -153,7 +154,7 @@
             <solution>
                 <p>
                     The differential equation would be written as 
-                    <m>\displaystyle \frac{dP}{dt}=k(120-t)</m>.
+                    <m>\displaystyle \frac{dP}{dt}=k(120-t)+C</m>.
                     The general solution to the differential equation, again using Seperation of Variables,
                     would produce 
                     <me>
