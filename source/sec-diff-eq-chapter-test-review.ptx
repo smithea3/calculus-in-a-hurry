@@ -73,50 +73,14 @@
                     Use Euler's Method to make a table of values for the approximate solution of the
                     following differential equation with specified intitial value. Use 10 steps and
                     a step size of 0.10.
+                    <me>
+                        y'=3x-2y, \quad y(x)=3, \quad n=10, \quad h=0.10
+                    </me>
                 </p>
             </statement>
             <solution>
                 <p>
-                    <sage>
-                        <input>
-                            # Change the value of n to increase the number of points generated.
-                            numOfSteps = 10
-                            n = list(range(0,numOfSteps+1))
-
-                            # Change these values based on the initial values given.
-                            x_0 = 0
-                            y_0 = 3
-                            h = 0.10
-
-                            # Change this function to be your differential equation.
-                            f(x,y)=3*x-2*y
-
-                            #__    __     ___     ____     __  __    __    __  __      ___     __
-                            #||    ||    // \\    || \\    ||\ ||    ||    ||\ ||     // \\    ||
-                            #\\ /\ //    ||=||    ||_//    ||\\||    ||    ||\\||    (( ___    ||
-                            # \V/\V/     || ||    || \\    || \||    ||    || \||     \\_||    ..
-                            
-                            ### DO NOT CHANGE UNLESS YOU KNOW PYTHON AND SAGEMATH! ###
-                            listOfXValues = [x_0]
-                            listOfYValues = [y_0]
-                            points = [(x_0, y_0)]
-                            for i in n:
-                                listOfXValues.append(listOfXValues[i]+h)
-                                listOfYValues.append(listOfYValues[i]+h*f(listOfXValues[i],listOfYValues[i]))
-                                points.append((listOfXValues[i]+h, listOfYValues[i]+h*f(listOfXValues[i],listOfYValues[i])))
-
-                            n.insert(0, "$n$")
-                            listOfXValues.insert(0, "$x_n$")
-                            listOfYValues.insert(0, "$y_n$")
-
-                            pretty_print(table(
-                                [n, listOfXValues, listOfYValues]
-                            ).transpose())
-
-                            list_plot(points).show()
-                        </input>
-                        <output></output>
-                    </sage>
+                    <url href="https://sagecell.sagemath.org/?q=oyacke">Click here to go to the SageMathCell Applet that solves by Euler's Method.</url>
                 </p>
             </solution>
         </exercise>
@@ -154,11 +118,11 @@
             <solution>
                 <p>
                     The differential equation would be written as 
-                    <m>\displaystyle \frac{dP}{dt}=k(120-t)+C</m>.
+                    <m>\displaystyle \frac{dP}{dt}=k(120-t)</m>.
                     The general solution to the differential equation, again using Seperation of Variables,
                     would produce 
                     <me>
-                        P(t)=-\frac{k}{2}(120-t)^2.
+                        P(t)=-\frac{k}{2}(120-t)^2+C.
                     </me>
                     
                 </p>
