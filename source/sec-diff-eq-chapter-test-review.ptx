@@ -116,7 +116,6 @@
                             list_plot(points).show()
                         </input>
                     </sage>
-
                 </p>
             </solution>
         </exercise>
@@ -129,7 +128,16 @@
                     </me>
                     
                 </p>
-            </statement>            
+            </statement>
+            <solution>
+                <p>
+                    Seperation of Variables technique results in a solution of 
+                    <me>
+                        y(x)=Ce^{x^3/3}+1.
+                    </me>
+                    
+                </p>
+            </solution>
         </exercise>
         <exercise>
             <statement>
@@ -142,6 +150,18 @@
                     proporitional to <m>120-t</m>.
                 </blockquote>
             </statement>
+            <solution>
+                <p>
+                    The differential equation would be written as 
+                    <m>\displaystyle \frac{dP}{dt}=k(120-t)</m>.
+                    The general solution to the differential equation, again using Seperation of Variables,
+                    would produce 
+                    <me>
+                        P(t)=-\frac{k}{2}(120-t)^2.
+                    </me>
+                    
+                </p>
+            </solution>
         </exercise>
         <exercise>
             <statement>
@@ -278,6 +298,11 @@
                         What is the growth rate of the bald eagle?
                     </p>
                 </statement>
+                <solution>
+                    <p>
+                        The inhibited growth rate of the bald eagle is 16.2%.
+                    </p>
+                </solution>
             </task>
             <task>
                 <statement>
@@ -285,6 +310,11 @@
                         What is the population after 3 years?
                     </p>
                 </statement>
+                <solution>
+                    <p>
+                        The population of the bald eagle after 3 years is approximately 9.682 (rounded to three decimal places).
+                    </p>
+                </solution>
             </task>
             <task>
                 <statement>
@@ -292,6 +322,12 @@
                         When will the population be 300 eagles?
                     </p>
                 </statement>
+                <solution>
+                    <p>
+                        Setting the equation equal to 300 and solving for <m>t</m> results in
+                        approximately 29.73 years.
+                    </p>
+                </solution>
             </task>
             <task>
                 <statement>
@@ -299,7 +335,81 @@
                         How long does it take for the population to reach one-half of the carrying capacity?
                     </p>
                 </statement>
+                <solution>
+                    <p>
+                        Setting the equation equal to 250 and solving for <m>t</m> results in
+                        approximately 27.227 years.
+                    </p>
+                </solution>
             </task>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    Solve the homogeneous differential equation.
+                    <me>
+                        (x-y)dx+xdy=0
+                    </me>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    We can rewrite the differential equation by dividing everything by 
+                    <m>dx</m>, which produces the new differential equation
+                    <me>
+                        x-y+x\frac{dy}{dx}=0
+                    </me>
+                    This differential equation can be written as <m>xy'-y=-x</m>. Dividing
+                    by <m>x</m> converts the differential equation to the standard form
+                    of a first-order linear differential equation:
+                    <me>
+                        y'-\frac{1}{x}y=-1
+                    </me>
+                    Using an integrating factor of <m>\mu(x)=e^{\int\frac{1}{x}\,dx}</m>,
+                    We get that <m>\displaystyle\mu(x)=\frac{1}{x}</m>.
+                </p>
+                <p>
+                    Using the formula derived in class, we obtain,
+                    <me>
+                        \boxed{y(x)=Cx-x\ln(x)}.
+                    </me>
+                </p>
+            </solution>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    Find the particular solution for the first-order linear differential 
+                    equation with the following initial condition.
+                    <me>
+                        y'+y=x; \quad y(0)=4
+                    </me>
+                </p>
+            </statement>
+            <solution>
+                <p> Using an integrating factor and the formula dervied in class, along with 
+                    back-substitution for solving, we get
+                    <me>
+                        y(x)=x+5e^{-x}+1
+                    </me> 
+                </p>
+            </solution>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    Solve the Bernoulli differential equation.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    Using the formula from the textbook (or Section 6.4 of WebAssign),
+                    we obtain the following.
+                    <me>
+                        y(x)=-\frac{1}{x^2+Cx}
+                    </me>
+                </p>
+            </solution>
         </exercise>
     </exercises>
 </section>
