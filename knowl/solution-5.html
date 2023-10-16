@@ -9,61 +9,15 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
-<script>// Make *any* pre with class 'sagecell-sage' an executable Sage cell
-// Their results will be linked, only within language type
-sagecell.makeSagecell({
-  "inputLocation": "pre.sagecell-sage",
-  "linked": true,
-  "linkKey": "linked-sage",
-  "autoeval": false,
-  "languages": [
-    "sage"
-  ],
-  "evalButtonText": "Evaluate (Sage)"
-});
-</script>
 </head>
 <body class="ignore-math">
 <div class="solution solution-like">
 <h4 class="heading">
 <span class="type">Solution</span><span class="space"> </span><span class="codenumber">1.2.2.1</span><span class="period">.</span>
 </h4>
-<div class="para"><pre class="ptx-sagecell sagecell-sage" id="sage-1"><script type="text/x-sage"># Change the value of n to increase the number of points generated.
-numOfSteps = 10
-n = list(range(0,numOfSteps+1))
-
-# Change these values based on the initial values given.
-x_0 = 0
-y_0 = 3
-h = 0.10
-
-# Change this function to be your differential equation.
-f(x,y)=3*x-2*y
-
-#__    __     ___     ____     __  __    __    __  __      ___     __
-#||    ||    // \\    || \\    ||\ ||    ||    ||\ ||     // \\    ||
-#\\ /\ //    ||=||    ||_//    ||\\||    ||    ||\\||    (( ___    ||
-# \V/\V/     || ||    || \\    || \||    ||    || \||     \\_||    ..
-
-### DO NOT CHANGE UNLESS YOU KNOW PYTHON AND SAGEMATH! ###
-listOfXValues = [x_0]
-listOfYValues = [y_0]
-points = [(x_0, y_0)]
-for i in n:
-    listOfXValues.append(listOfXValues[i]+h)
-    listOfYValues.append(listOfYValues[i]+h*f(listOfXValues[i],listOfYValues[i]))
-    points.append((listOfXValues[i]+h, listOfYValues[i]+h*f(listOfXValues[i],listOfYValues[i])))
-
-n.insert(0, "$n$")
-listOfXValues.insert(0, "$x_n$")
-listOfYValues.insert(0, "$y_n$")
-
-pretty_print(table(
-    [n, listOfXValues, listOfYValues]
-).transpose())
-
-list_plot(points).show()
-</script></pre></div>
+<div class="para">
+<a class="external" href="https://sagecell.sagemath.org/?q=oyacke" target="_blank">Click here to go to the SageMathCell Applet that solves by Euler’s Method.</a><a class="xref" id="fn-2" href="" data-knowl="./knowl/fn-2.html" title="Footnote 1.2.1"><sup> 1 </sup></a>
+</div>
 </div>
 <span class="incontext"><a href="sec-differential-equations-test-review.html#solution-5" class="internal">in-context</a></span>
 </body>

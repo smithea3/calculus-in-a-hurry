@@ -14,7 +14,7 @@
 <meta property="og:type" content="book">
 <meta property="book:title" content="Calculus">
 <meta property="book:author" content="Ethan A. Smith">
-<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>
+<script>
 var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
   "tex": {
@@ -41,24 +41,7 @@ window.MathJax = {
   },
   "options": {
     "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
-    "processHtmlClass": "process-math",
-    "renderActions": {
-      "findScript": [
-        10,
-        function (doc) {
-            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
-                var display = !!node.type.match(/; *mode=display/);
-                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
-                var text = document.createTextNode('');
-                node.parentNode.replaceChild(text, node);
-                math.start = {node: text, delim: '', n: 0};
-                math.end = {node: text, delim: '', n: 0};
-                doc.math.push(math);
-            });
-        },
-        ""
-      ]
-    }
+    "processHtmlClass": "process-math"
   },
   "chtml": {
     "scale": 0.98,
@@ -86,19 +69,7 @@ window.MathJax = {
     )}
   }
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script>// Make *any* pre with class 'sagecell-sage' an executable Sage cell
-// Their results will be linked, only within language type
-sagecell.makeSagecell({
-  "inputLocation": "pre.sagecell-sage",
-  "linked": true,
-  "linkKey": "linked-sage",
-  "autoeval": false,
-  "languages": [
-    "sage"
-  ],
-  "evalButtonText": "Evaluate (Sage)"
-});
-</script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.31/pretext_search.js"></script><link href="https://pretextbook.org/css/0.81/pretext_search.css" rel="stylesheet" type="text/css">
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.31/pretext_search.js"></script><link href="https://pretextbook.org/css/0.81/pretext_search.css" rel="stylesheet" type="text/css">
 <script>js_version = 0.31</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.31/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.31/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.31/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -209,44 +180,18 @@ y(x) \amp = \frac{1}{\mu(x)}\int \mu(x)f(x)\,dx\\
 <div class="solutions">
 <a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-4" id="solution-4"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-4"><div class="solution solution-like"><div class="para" id="p-17"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/sageplot/image-2.svg" role="img" class="contained"></div></div></div></div>
 </div></article></article><article class="exercise exercise-like" id="exercise-2"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
-<div class="para" id="p-18">Use Euler’s Method to make a table of values for the approximate solution of the following differential equation with specified intitial value. Use 10 steps and a step size of 0.10.</div>
+<div class="para logical" id="p-18">
+<div class="para">Use Euler’s Method to make a table of values for the approximate solution of the following differential equation with specified intitial value. Use 10 steps and a step size of 0.10.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+y'=3x-2y, \quad y(x)=3, \quad n=10, \quad h=0.10
+\end{equation*}
+</div>
+</div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-5" id="solution-5"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-5"><div class="solution solution-like"><div class="para" id="p-19"><pre class="ptx-sagecell sagecell-sage" id="sage-1"><script type="text/x-sage"># Change the value of n to increase the number of points generated.
-numOfSteps = 10
-n = list(range(0,numOfSteps+1))
-
-# Change these values based on the initial values given.
-x_0 = 0
-y_0 = 3
-h = 0.10
-
-# Change this function to be your differential equation.
-f(x,y)=3*x-2*y
-
-#__    __     ___     ____     __  __    __    __  __      ___     __
-#||    ||    // \\    || \\    ||\ ||    ||    ||\ ||     // \\    ||
-#\\ /\ //    ||=||    ||_//    ||\\||    ||    ||\\||    (( ___    ||
-# \V/\V/     || ||    || \\    || \||    ||    || \||     \\_||    ..
-
-### DO NOT CHANGE UNLESS YOU KNOW PYTHON AND SAGEMATH! ###
-listOfXValues = [x_0]
-listOfYValues = [y_0]
-points = [(x_0, y_0)]
-for i in n:
-    listOfXValues.append(listOfXValues[i]+h)
-    listOfYValues.append(listOfYValues[i]+h*f(listOfXValues[i],listOfYValues[i]))
-    points.append((listOfXValues[i]+h, listOfYValues[i]+h*f(listOfXValues[i],listOfYValues[i])))
-
-n.insert(0, "$n$")
-listOfXValues.insert(0, "$x_n$")
-listOfYValues.insert(0, "$y_n$")
-
-pretty_print(table(
-    [n, listOfXValues, listOfYValues]
-).transpose())
-
-list_plot(points).show()
-</script></pre></div></div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-5" id="solution-5"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-5"><div class="solution solution-like"><div class="para" id="p-19">
+<a class="external" href="https://sagecell.sagemath.org/?q=oyacke" target="_blank">Click here to go to the SageMathCell Applet that solves by Euler’s Method.</a><a class="xref" id="fn-2" href="" data-knowl="./knowl/fn-2.html" title="Footnote 1.2.1"><sup> 1 </sup></a>
+</div></div></div>
 </div></article><article class="exercise exercise-like" id="exercise-3"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
 <div class="para logical" id="p-20">
 <div class="para">Solve the differential equation.</div>
@@ -270,10 +215,10 @@ y(x)=Ce^{x^3/3}+1.
 </blockquote>
 <div class="solutions">
 <a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-7" id="solution-7"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-7"><div class="solution solution-like"><div class="para logical" id="p-23">
-<div class="para">The differential equation would be written as <span class="process-math">\(\displaystyle \frac{dP}{dt}=k(120-t)+C\text{.}\)</span> The general solution to the differential equation, again using Seperation of Variables, would produce</div>
+<div class="para">The differential equation would be written as <span class="process-math">\(\displaystyle \frac{dP}{dt}=k(120-t)\text{.}\)</span> The general solution to the differential equation, again using Seperation of Variables, would produce</div>
 <div class="displaymath process-math">
 \begin{equation*}
-P(t)=-\frac{k}{2}(120-t)^2.
+P(t)=-\frac{k}{2}(120-t)^2+C.
 \end{equation*}
 </div>
 </div></div></div>
