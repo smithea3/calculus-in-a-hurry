@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ch-sequences">
+    <title>Sequences and Series</title>
+    <introduction>
+        In this chapter, we introduce the concept of a sequence and define convergence and divergence of a sequence. 
+        We will then use the concept of a sequence to build the sum, different, or alternating sum and difference of
+        the sequence of numbers to build a series. We will also develop techniques to analyze sequences and series
+        and utlize those techniques to determine if a sequence and serice converges or diverges.
+    </introduction>
+    <xi:include href="sec-intro-to-sequences.ptx" />
+</chapter>

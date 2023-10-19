@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-intro-to-sequences">
+    <title>Introduction to Sequences</title>
+    <introduction>
+        <p>
+            To begin our look at sequences and series, we start with the basics of a sequence. In
+            this section we will develop the basic properties and notation for a sequence, look at
+            different types of sequences, and use techniques from differential calculus to analyze
+            if a sequence converges or diverges.
+        </p>
+    </introduction>
+
+    <definition xml:id="def-sequence-of-reals">
+        <statement>
+            <p> A <em>sequence of real numbers</em>, which we write as <m>\left\{a_k\right\}_k^\infty</m>, is
+                a function whose inputs are from the set of positive integers and their outputs are
+                to the set of real numbers. The inputs are typically denoted with an <m>k</m> or an <m>
+                n</m> and is called an <em>index</em>. The output, denoted <m>a_k</m> or <m>a_n</m>
+                is called the <m>k</m>th term of the sequence. </p>
+            <p>    
+                We can condense this definition using mathemtical notation by writing <m>k\in\Z^+</m>
+                such that <m>a(k):\Z^+\to\R</m>. 
+            </p>
+        </statement>
+    </definition>
+    
+    <p> 
+        It is important to note that the index of the sequence is always <m>\Z^+</m>, but the output
+        is dependent upon the definition of the sequence. Let's begin by looking at a few examples.
+    </p>
+
+    <example xml:id="ex-seq-1">
+        <statement>
+            <p>
+                Below are a few examples of various sequences. As you read them, see if you can
+                determine the pattern that gives the next term in the sequence.
+                <md>
+                    <mrow> \amp 1, 3, 5, 7, 9, \dots </mrow>
+                    <mrow> \amp 0, 1, 1, 2, 3, 5, 7, 11, 13, \dots</mrow>
+                    <mrow> \amp 1, \frac{1}{2}, \frac{1}{3}, \frac{1}{4}, \frac{1}{5}, \dots </mrow>
+                    <mrow> \amp 1, -2, 3, -4, 5, -6, \dots </mrow>
+                    <mrow> \amp e, e, e, e, e, \dots </mrow>
+                </md>
+            </p>
+        </statement>
+    </example>
+    
+    <p> 
+        As you tried to determine the next term in <xref ref="ex-seq-1" />, did you notice that some
+        sequences looked like familar formulas and others were best described based on their previous
+        term? For example, in the second sequence (<m>0, 1, 1, 2, 3, 5, 7, \dots</m>), the next term is the
+        sum of the previous two terms. 
+    </p>
+    <p> 
+        Sequences that are best describe by a close-form formula are <em>explicitly defined</em> and
+        sequences defined by previous terms are <em>implicitly defined</em>. In fact, the sequence <m>0,
+        1, 1, 3, 4, \dots</m> is a well-known sequence called the <em>Fibonacci sequence</em>. 
+    </p>
+    <p> 
+        We can write the Fibonacci sequence in the notation of sequences by writing <m>\displaystyle
+        \left\{ a_{k-2}+a_{k-1} \,|\, a_1 = 1, a_2 = 1 \right\}_k^\infty</m>. Notice here how the first
+        two terms of the sequence is already defined. Another important recursively-defined sequence
+        that we will utlize in this chapter is the <em>factorial sequence</em>. 
+    </p>
+    <p>
+        To quickly review the concept of a factorial, consider the following scenario. You want to
+        create a playlist of song. You have 10 songs from which to choose. How many different lists
+        can you make if you cannot repeat songs on the playlist and the order of the playlist is
+        important. Since you can choose from any of the 10 songs from the first choice, but only
+        nine for the second, eight for the third, seven for the fourth, etc., you would calculate
+        the total by multiplying these choices together.
+        <me>
+            10\cdot9\cdot8\cdot7\cdots2\cdot1=3,628,800
+        </me>
+        We condense this expression by writing <m>10!</m>, which we read aloud as "10 factorial."
+    </p>
+</section>

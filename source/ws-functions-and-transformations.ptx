@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<section xml:id="ws-rational-expressions">
+<worksheet xml:id="ws-rational-expressions">
     <title>Functions and Transformations Worksheet</title>
     <objectives>
         <ul>
@@ -7,12 +7,14 @@
         </ul>
     </objectives>
     <introduction>
-        Functions are an essential part of mathematics and have a wide range of applications in the
+        Functions are an essential part of mathematics and have a wide range of applications in
+        the
         real world. In this worksheet, we will explore the concept of functions and their
-        transformations. We will learn how to graph different types of functions and how to apply
+        transformations. We will learn how to graph different types of functions and how to
+        apply
         various transformations to them.
     </introduction>
-    <exercises>
+    <page>
         <exercise>
             <statement>
                 <p>Does the following image illustrate a function?</p>
@@ -30,9 +32,12 @@
                             \node[below=of b2] (b3) {Fred};
                             \node[right=4cm of a4] (aux2) {};
                             \node[shape=ellipse,draw=myblue,minimum size=3cm,fit={(a1) (a4)}]{};
-                            \node[shape=ellipse,draw=myblue,minimum size=3cm,fit={(aux1) (aux2)}]{};
-                            \node[below=1.5cm of a4,font=\color{myblue}\Large\bfseries] {Domain};
-                            \node[below=1.5cm of aux2,font=\color{myblue}\Large\bfseries] {Range};
+                            \node[shape=ellipse,draw=myblue,minimum size=3cm,fit={(aux1)
+                            (aux2)}]{};
+                            \node[below=1.5cm of a4,font=\color{myblue}\Large\bfseries]
+                            {Domain};
+                            \node[below=1.5cm of aux2,font=\color{myblue}\Large\bfseries]
+                            {Range};
                             \draw[->,myblue] (a1) -- (b1.170);
                             \draw[->,myblue] (a2) -- (b1.190);
                             \draw[->,myblue] (a3) -- (b2.175);
@@ -42,11 +47,6 @@
                     </image>
                 </figure>
             </statement>
-            <solution>
-                <p>
-                    testing, hello world.
-                </p>
-            </solution>
         </exercise>
         <exercise>
             <statement>
@@ -63,7 +63,8 @@
                             \node[below=of b2] (b3) {$17$};
                             \node[shape=ellipse,draw=myblue,minimum size=3cm,fit={(a1) (a3)}]{};
                             \node[shape=ellipse,draw=myblue,minimum size=3cm,fit={(b1) (b3)}]{};
-                            \node[below=1.0cm of a3,font=\color{myblue}\Large\bfseries] {Domain};
+                            \node[below=1.0cm of a3,font=\color{myblue}\Large\bfseries]
+                            {Domain};
                             \node[below=1.0cm of b3,font=\color{myblue}\Large\bfseries] {Range};
                             \draw[->,myblue] (a1) -- (b1.170);
                             \draw[->,myblue] (a2) -- (b2.190);
@@ -89,7 +90,8 @@
                             \node[below=of b2] (b3) {$\pi$};
                             \node[shape=ellipse,draw=myblue,minimum size=3cm,fit={(a1) (a3)}]{};
                             \node[shape=ellipse,draw=myblue,minimum size=3cm,fit={(b1) (b3)}]{};
-                            \node[below=1.0cm of a3,font=\color{myblue}\Large\bfseries] {Domain};
+                            \node[below=1.0cm of a3,font=\color{myblue}\Large\bfseries]
+                            {Domain};
                             \node[below=1.0cm of b3,font=\color{myblue}\Large\bfseries] {Range};
                             \draw[->,myblue] (a1) -- (b2.170);
                             \draw[->,myblue] (a2) -- (b2.190);
@@ -100,6 +102,8 @@
                 </figure>
             </statement>
         </exercise>
+    </page>
+    <page>
         <exercise>
             <statement>
                 <p>Does the following image illustrate a function?</p>
@@ -118,5 +122,5 @@
                 <p>Does the following equation represent a function? <me>y-3=\sqrt{x+8}</me></p>
             </statement>
         </exercise>
-    </exercises>
-</section>
+    </page>
+</worksheet>

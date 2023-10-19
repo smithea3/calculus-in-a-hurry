@@ -5,6 +5,7 @@
   <docinfo>
     <macros>
       \newcommand{\R}{\mathbb R}
+      \newcommand{\Z}{\mathbb Z}
     </macros>
     <latex-image-preamble>
       \usepackage{tikz}
@@ -20,6 +21,8 @@
     <xi:include href="frontmatter.ptx" />
 
     <xi:include href="ch_basics-of-integration.ptx" />
+
+    <xi:include href="ch-sequences.ptx" />
 
     <xi:include href="ch-review-exercises.ptx" />
 
