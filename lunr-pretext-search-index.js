@@ -127,20 +127,47 @@ var ptx_lunr_docs = [
   "body": " Solve the Bernoulli differential equation.   Using the formula from the textbook (or Section 6.4 of WebAssign), we obtain the following.   "
 },
 {
+  "id": "sec-intro-to-sequences",
+  "level": "1",
+  "url": "sec-intro-to-sequences.html",
+  "type": "Section",
+  "number": "2.1",
+  "title": "Introduction to Sequences",
+  "body": " Introduction to Sequences   To begin our look at sequences and series, we start with the basics of a sequence. In this section we will develop the basic properties and notation for a sequence, look at different types of sequences, and use techniques from differential calculus to analyze if a sequence converges or diverges.     A sequence of real numbers , which we write as , is a function whose inputs are from the set of positive integers and their outputs are to the set of real numbers. The inputs are typically denoted with an or an and is called an index . The output, denoted or is called the th term of the sequence.  We can condense this definition using mathemtical notation by writing such that .    It is important to note that the index of the sequence is always , but the output is dependent upon the definition of the sequence. Let's begin by looking at a few examples.    Below are a few examples of various sequences. As you read them, see if you can determine the pattern that gives the next term in the sequence.     As you tried to determine the next term in , did you notice that some sequences looked like familar formulas and others were best described based on their previous term? For example, in the second sequence ( ), the next term is the sum of the previous two terms.  Sequences that are best describe by a close-form formula are explicitly defined and sequences defined by previous terms are implicitly defined . In fact, the sequence is a well-known sequence called the Fibonacci sequence .  We can write the Fibonacci sequence in the notation of sequences by writing . Notice here how the first two terms of the sequence is already defined. Another important recursively-defined sequence that we will utlize in this chapter is the factorial sequence .  To quickly review the concept of a factorial, consider the following scenario. You want to create a playlist of song. You have 10 songs from which to choose. How many different lists can you make if you cannot repeat songs on the playlist and the order of the playlist is important. Since you can choose from any of the 10 songs from the first choice, but only nine for the second, eight for the third, seven for the fourth, etc., you would calculate the total by multiplying these choices together. We condense this expression by writing , which we read aloud as \"10 factorial.\"  "
+},
+{
+  "id": "def-sequence-of-reals",
+  "level": "2",
+  "url": "sec-intro-to-sequences.html#def-sequence-of-reals",
+  "type": "Definition",
+  "number": "2.1.1",
+  "title": "",
+  "body": "  A sequence of real numbers , which we write as , is a function whose inputs are from the set of positive integers and their outputs are to the set of real numbers. The inputs are typically denoted with an or an and is called an index . The output, denoted or is called the th term of the sequence.  We can condense this definition using mathemtical notation by writing such that .   "
+},
+{
+  "id": "ex-seq-1",
+  "level": "2",
+  "url": "sec-intro-to-sequences.html#ex-seq-1",
+  "type": "Example",
+  "number": "2.1.2",
+  "title": "",
+  "body": "  Below are a few examples of various sequences. As you read them, see if you can determine the pattern that gives the next term in the sequence.    "
+},
+{
   "id": "ws-rational-expressions",
   "level": "1",
   "url": "ws-rational-expressions.html",
-  "type": "Section",
-  "number": "2.1",
+  "type": "Worksheet",
+  "number": "3.1",
   "title": "Functions and Transformations Worksheet",
-  "body": " Functions and Transformations Worksheet    Insert objective here.    Functions are an essential part of mathematics and have a wide range of applications in the real world. In this worksheet, we will explore the concept of functions and their transformations. We will learn how to graph different types of functions and how to apply various transformations to them.    Does the following image illustrate a function?        testing, hello world.    Does the following image illustrate a function?         Does the following image illustrate a function?         Does the following image illustrate a function?         Does the following equation represent a function?    "
+  "body": " Functions and Transformations Worksheet    Insert objective here.    Functions are an essential part of mathematics and have a wide range of applications in the real world. In this worksheet, we will explore the concept of functions and their transformations. We will learn how to graph different types of functions and how to apply various transformations to them.    Does the following image illustrate a function?         Does the following image illustrate a function?         Does the following image illustrate a function?           Does the following image illustrate a function?         Does the following equation represent a function?    "
 },
 {
   "id": "objectives-1",
   "level": "2",
   "url": "ws-rational-expressions.html#objectives-1",
   "type": "Objectives",
-  "number": "2.1",
+  "number": "3.1",
   "title": "",
   "body": "  Insert objective here.   "
 },
@@ -148,17 +175,17 @@ var ptx_lunr_docs = [
   "id": "exercise-11",
   "level": "2",
   "url": "ws-rational-expressions.html#exercise-11",
-  "type": "Exercise",
-  "number": "2.1.1",
+  "type": "Worksheet Exercise",
+  "number": "3.1.1",
   "title": "",
-  "body": " Does the following image illustrate a function?        testing, hello world.  "
+  "body": " Does the following image illustrate a function?       "
 },
 {
   "id": "exercise-12",
   "level": "2",
   "url": "ws-rational-expressions.html#exercise-12",
-  "type": "Exercise",
-  "number": "2.1.2",
+  "type": "Worksheet Exercise",
+  "number": "3.1.2",
   "title": "",
   "body": " Does the following image illustrate a function?       "
 },
@@ -166,8 +193,8 @@ var ptx_lunr_docs = [
   "id": "exercise-13",
   "level": "2",
   "url": "ws-rational-expressions.html#exercise-13",
-  "type": "Exercise",
-  "number": "2.1.3",
+  "type": "Worksheet Exercise",
+  "number": "3.1.3",
   "title": "",
   "body": " Does the following image illustrate a function?       "
 },
@@ -175,8 +202,8 @@ var ptx_lunr_docs = [
   "id": "exercise-14",
   "level": "2",
   "url": "ws-rational-expressions.html#exercise-14",
-  "type": "Exercise",
-  "number": "2.1.4",
+  "type": "Worksheet Exercise",
+  "number": "3.1.4",
   "title": "",
   "body": " Does the following image illustrate a function?       "
 },
@@ -184,8 +211,8 @@ var ptx_lunr_docs = [
   "id": "exercise-15",
   "level": "2",
   "url": "ws-rational-expressions.html#exercise-15",
-  "type": "Exercise",
-  "number": "2.1.5",
+  "type": "Worksheet Exercise",
+  "number": "3.1.5",
   "title": "",
   "body": " Does the following equation represent a function?  "
 }
