@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math"><div class="solution solution-like"><div class="para logical">
+<div class="para">To find convergence, we first check that conditions of the Divergence Test. Since the sequence of the summand goes to zero, the Divergence Test is inconclusive. Next, we consider the conditions of the Integral Test. The sequence is always positive, and if <span class="process-math">\(k&gt;3\text{,}\)</span> then the sequence is monotonically decreasing. Therefore, we can apply the Integral Test.</div>
+<div class="displaymath process-math">
+\begin{align*}
+\int_{k=1}^{\infty} x^2e^{-x}\,dx \amp = \lim_{b\to\infty}\int_{1}^{b} x^2e^{-x}\,dx\\
+\amp = \lim_{b\to\infty}\left[-e^{-x}x^2-2e^{-x}x-2e^{-x}\right]_{1}^{b} 
+\end{align*}
+</div>
+<div class="para">Since each piece of the antiderivative contains a <span class="process-math">\(e^{-x}\)</span> term, the values at infinity will be zero. Therefore, the only parts that remain are when <span class="process-math">\(x=1\text{,}\)</span> which is <span class="process-math">\(5e^{-1}\text{.}\)</span> Since the integral converges, we can conclude that the series also converges by the Integral Test.</div>
+</div></div></body>
+</html>

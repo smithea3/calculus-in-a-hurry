@@ -154,11 +154,155 @@ var ptx_lunr_docs = [
   "body": "  Below are a few examples of various sequences. As you read them, see if you can determine the pattern that gives the next term in the sequence.    "
 },
 {
+  "id": "sec-integral-test",
+  "level": "1",
+  "url": "sec-integral-test.html",
+  "type": "Section",
+  "number": "3.1",
+  "title": "The Integral Test",
+  "body": " The Integral Test   For each of the following series, determine if the series converges or diverges. You must use a test or a well-known series (i.e. geometric, telescoping, etc.) to prove the convergence AND divergence. If the series is a well-known series that the value of the convergence can be found, then find the value of convergence.         The series is geometric.   The series is geometric; therefore, it converges since , which is less than one. The value to which the series converges to is         The series is not geometric or telescoping and looks easily integrable.   First, we check if the Divergence Test provides any information about the series. Since the sequence is always positive and monotonically decreasing, we can apply the Integral Test. Consider the integral         The series involves a power function.   This series is a p-series with , and it converges since .        The series is a geometric series.   This series is geometric; therefore, it converges since , which is less than one. Therefore, the series converges to the value of         The series is always positive, eventually monotonically decreasing, and can be integrated using Integration by Parts.   To find convergence, we first check that conditions of the Divergence Test. Since the sequence of the summand goes to zero, the Divergence Test is inconclusive. Next, we consider the conditions of the Integral Test. The sequence is always positive, and if , then the sequence is monotonically decreasing. Therefore, we can apply the Integral Test. Since each piece of the antiderivative contains a term, the values at infinity will be zero. Therefore, the only parts that remain are when , which is . Since the integral converges, we can conclude that the series also converges by the Integral Test.        The series is always positive, eventually monotonically decreasing, and can be integrated using u-substitution.   To find convergence, we first check that conditions of the Divergence Test. Since the sequence of the summand goes to zero, the Divergence Test is inconclusive. Next, we consider the conditions of the Integral Test. The sequence is always positive and always monotonically decreasing. Therefore, we can apply the Integral Test. Since the values of the argument of the natrual logarithim are always increasing, the logarithim is, therefore, always increasing. So, this limit goes to infinity. This means that the improper integral diverges. Therefore, by the integral thest, the series also diverges.    "
+},
+{
+  "id": "exercise-11",
+  "level": "2",
+  "url": "sec-integral-test.html#exercise-11",
+  "type": "Exercise",
+  "number": "3.1.1",
+  "title": "",
+  "body": "     The series is geometric.   The series is geometric; therefore, it converges since , which is less than one. The value to which the series converges to is   "
+},
+{
+  "id": "exercise-12",
+  "level": "2",
+  "url": "sec-integral-test.html#exercise-12",
+  "type": "Exercise",
+  "number": "3.1.2",
+  "title": "",
+  "body": "     The series is not geometric or telescoping and looks easily integrable.   First, we check if the Divergence Test provides any information about the series. Since the sequence is always positive and monotonically decreasing, we can apply the Integral Test. Consider the integral   "
+},
+{
+  "id": "exercise-13",
+  "level": "2",
+  "url": "sec-integral-test.html#exercise-13",
+  "type": "Exercise",
+  "number": "3.1.3",
+  "title": "",
+  "body": "     The series involves a power function.   This series is a p-series with , and it converges since .  "
+},
+{
+  "id": "exercise-14",
+  "level": "2",
+  "url": "sec-integral-test.html#exercise-14",
+  "type": "Exercise",
+  "number": "3.1.4",
+  "title": "",
+  "body": "     The series is a geometric series.   This series is geometric; therefore, it converges since , which is less than one. Therefore, the series converges to the value of   "
+},
+{
+  "id": "exercise-15",
+  "level": "2",
+  "url": "sec-integral-test.html#exercise-15",
+  "type": "Exercise",
+  "number": "3.1.5",
+  "title": "",
+  "body": "     The series is always positive, eventually monotonically decreasing, and can be integrated using Integration by Parts.   To find convergence, we first check that conditions of the Divergence Test. Since the sequence of the summand goes to zero, the Divergence Test is inconclusive. Next, we consider the conditions of the Integral Test. The sequence is always positive, and if , then the sequence is monotonically decreasing. Therefore, we can apply the Integral Test. Since each piece of the antiderivative contains a term, the values at infinity will be zero. Therefore, the only parts that remain are when , which is . Since the integral converges, we can conclude that the series also converges by the Integral Test.  "
+},
+{
+  "id": "exercise-16",
+  "level": "2",
+  "url": "sec-integral-test.html#exercise-16",
+  "type": "Exercise",
+  "number": "3.1.6",
+  "title": "",
+  "body": "     The series is always positive, eventually monotonically decreasing, and can be integrated using u-substitution.   To find convergence, we first check that conditions of the Divergence Test. Since the sequence of the summand goes to zero, the Divergence Test is inconclusive. Next, we consider the conditions of the Integral Test. The sequence is always positive and always monotonically decreasing. Therefore, we can apply the Integral Test. Since the values of the argument of the natrual logarithim are always increasing, the logarithim is, therefore, always increasing. So, this limit goes to infinity. This means that the improper integral diverges. Therefore, by the integral thest, the series also diverges.  "
+},
+{
+  "id": "sec-comparison-test",
+  "level": "1",
+  "url": "sec-comparison-test.html",
+  "type": "Section",
+  "number": "3.2",
+  "title": "The Comparison Tests",
+  "body": " The Comparison Tests   For each of the following series, determine if the series converges or diverges. You must use a test or a well-known series (i.e. geometric, telescoping, etc.) to prove the convergence AND divergence. If the series is a well-known series that the value of the convergence can be found, then find the value of convergence.         Use the direct comparison test to prove convergence. Note that for all .   Since the Divergence Test is inconclusive, and the series does not look to be easily integrable, we will consider the comparison tests. For this series, the direct comparison test is a good candidate because , which means that . Moreover, we know that converges because it is a geometric series where . Therefore, So, we can conclude by the direct comparison test that also converges.        Use the direct comparison test to prove convergence.   Apply the direct comparison test by comparing the series with a known convergent series.        Use the direct comparison test to prove convergence.   Apply the direct comparison test by comparing the series with a known convergent series.        Use the direct comparison test to prove convergence.   Apply the direct comparison test by comparing the series with a known convergent series.        Use the limit comparison test to prove convergence.   Apply the limit comparison test by finding the limit of the ratio of the given series and a known convergent series.        Use the limit comparison test to prove convergence.   Apply the limit comparison test by finding the limit of the ratio of the given series and a known convergent series.        Use the limit comparison test to prove convergence.   Apply the limit comparison test by finding the limit of the ratio of the given series and a known convergent series.        Use the limit comparison test to prove convergence.   Apply the limit comparison test by finding the limit of the ratio of the given series and a known convergent series.    "
+},
+{
+  "id": "exercise-17",
+  "level": "2",
+  "url": "sec-comparison-test.html#exercise-17",
+  "type": "Exercise",
+  "number": "3.2.1",
+  "title": "",
+  "body": "     Use the direct comparison test to prove convergence. Note that for all .   Since the Divergence Test is inconclusive, and the series does not look to be easily integrable, we will consider the comparison tests. For this series, the direct comparison test is a good candidate because , which means that . Moreover, we know that converges because it is a geometric series where . Therefore, So, we can conclude by the direct comparison test that also converges.  "
+},
+{
+  "id": "exercise-18",
+  "level": "2",
+  "url": "sec-comparison-test.html#exercise-18",
+  "type": "Exercise",
+  "number": "3.2.2",
+  "title": "",
+  "body": "     Use the direct comparison test to prove convergence.   Apply the direct comparison test by comparing the series with a known convergent series.  "
+},
+{
+  "id": "exercise-19",
+  "level": "2",
+  "url": "sec-comparison-test.html#exercise-19",
+  "type": "Exercise",
+  "number": "3.2.3",
+  "title": "",
+  "body": "     Use the direct comparison test to prove convergence.   Apply the direct comparison test by comparing the series with a known convergent series.  "
+},
+{
+  "id": "exercise-20",
+  "level": "2",
+  "url": "sec-comparison-test.html#exercise-20",
+  "type": "Exercise",
+  "number": "3.2.4",
+  "title": "",
+  "body": "     Use the direct comparison test to prove convergence.   Apply the direct comparison test by comparing the series with a known convergent series.  "
+},
+{
+  "id": "exercise-21",
+  "level": "2",
+  "url": "sec-comparison-test.html#exercise-21",
+  "type": "Exercise",
+  "number": "3.2.5",
+  "title": "",
+  "body": "     Use the limit comparison test to prove convergence.   Apply the limit comparison test by finding the limit of the ratio of the given series and a known convergent series.  "
+},
+{
+  "id": "exercise-22",
+  "level": "2",
+  "url": "sec-comparison-test.html#exercise-22",
+  "type": "Exercise",
+  "number": "3.2.6",
+  "title": "",
+  "body": "     Use the limit comparison test to prove convergence.   Apply the limit comparison test by finding the limit of the ratio of the given series and a known convergent series.  "
+},
+{
+  "id": "exercise-23",
+  "level": "2",
+  "url": "sec-comparison-test.html#exercise-23",
+  "type": "Exercise",
+  "number": "3.2.7",
+  "title": "",
+  "body": "     Use the limit comparison test to prove convergence.   Apply the limit comparison test by finding the limit of the ratio of the given series and a known convergent series.  "
+},
+{
+  "id": "exercise-24",
+  "level": "2",
+  "url": "sec-comparison-test.html#exercise-24",
+  "type": "Exercise",
+  "number": "3.2.8",
+  "title": "",
+  "body": "     Use the limit comparison test to prove convergence.   Apply the limit comparison test by finding the limit of the ratio of the given series and a known convergent series.  "
+},
+{
   "id": "ws-rational-expressions",
   "level": "1",
   "url": "ws-rational-expressions.html",
   "type": "Worksheet",
-  "number": "3.1",
+  "number": "4.1",
   "title": "Functions and Transformations Worksheet",
   "body": " Functions and Transformations Worksheet    Insert objective here.    Functions are an essential part of mathematics and have a wide range of applications in the real world. In this worksheet, we will explore the concept of functions and their transformations. We will learn how to graph different types of functions and how to apply various transformations to them.    Does the following image illustrate a function?         Does the following image illustrate a function?         Does the following image illustrate a function?           Does the following image illustrate a function?         Does the following equation represent a function?    "
 },
@@ -167,52 +311,52 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-rational-expressions.html#objectives-1",
   "type": "Objectives",
-  "number": "3.1",
+  "number": "4.1",
   "title": "",
   "body": "  Insert objective here.   "
 },
 {
-  "id": "exercise-11",
+  "id": "exercise-25",
   "level": "2",
-  "url": "ws-rational-expressions.html#exercise-11",
+  "url": "ws-rational-expressions.html#exercise-25",
   "type": "Worksheet Exercise",
-  "number": "3.1.1",
+  "number": "4.1.1",
   "title": "",
   "body": " Does the following image illustrate a function?       "
 },
 {
-  "id": "exercise-12",
+  "id": "exercise-26",
   "level": "2",
-  "url": "ws-rational-expressions.html#exercise-12",
+  "url": "ws-rational-expressions.html#exercise-26",
   "type": "Worksheet Exercise",
-  "number": "3.1.2",
+  "number": "4.1.2",
   "title": "",
   "body": " Does the following image illustrate a function?       "
 },
 {
-  "id": "exercise-13",
+  "id": "exercise-27",
   "level": "2",
-  "url": "ws-rational-expressions.html#exercise-13",
+  "url": "ws-rational-expressions.html#exercise-27",
   "type": "Worksheet Exercise",
-  "number": "3.1.3",
+  "number": "4.1.3",
   "title": "",
   "body": " Does the following image illustrate a function?       "
 },
 {
-  "id": "exercise-14",
+  "id": "exercise-28",
   "level": "2",
-  "url": "ws-rational-expressions.html#exercise-14",
+  "url": "ws-rational-expressions.html#exercise-28",
   "type": "Worksheet Exercise",
-  "number": "3.1.4",
+  "number": "4.1.4",
   "title": "",
   "body": " Does the following image illustrate a function?       "
 },
 {
-  "id": "exercise-15",
+  "id": "exercise-29",
   "level": "2",
-  "url": "ws-rational-expressions.html#exercise-15",
+  "url": "ws-rational-expressions.html#exercise-29",
   "type": "Worksheet Exercise",
-  "number": "3.1.5",
+  "number": "4.1.5",
   "title": "",
   "body": " Does the following equation represent a function?  "
 }
