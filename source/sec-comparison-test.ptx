@@ -151,7 +151,7 @@
         <exercise>
             <statement>
                 <p>
-                    <m>\displaystyle \sum_{n=0}^{\infty}\frac{n!}{n^n}</m>
+                    <m>\displaystyle \sum_{n=0}^{\infty}\frac{k^5}{k^6-2}</m>
                 </p>
             </statement>
             <hint>
