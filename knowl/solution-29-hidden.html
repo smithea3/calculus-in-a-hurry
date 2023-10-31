@@ -10,5 +10,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><div class="solution solution-like"><div class="para">Apply the direct comparison test by comparing the series with a known convergent series.</div></div></body>
+<body class="ignore-math"><div class="solution solution-like"><div class="para logical">
+<div class="para">First, it is important to note, and get in the habit of checking, that the divergence test is inconclusive here because the summand, as a sequence, goes to zero. To use the Limit Comparison Test, a sequence must be used that behaves in a similar way that the given series behaves. A closer look at the given series shows that at infinity, the terms of the summand will look a lot like <span class="process-math">\(\frac{1}{k}\text{.}\)</span> Therefore, the Harmonic Series is a great candidate to use for this series. So, consider the following limit:</div>
+<div class="displaymath process-math">
+\begin{align*}
+\lim_{k\to\infty}\frac{a_k}{b_k} \amp = \lim_{k\to\infty}\frac{\frac{2k+1}{k^2+2k+1}}{\frac{1}{k}} \\
+\amp = \lim_{k\to\infty}\frac{2k+1}{k^2+2k+1}\cdot\frac{k}{1} \\
+\amp = \lim_{k\to\infty}\frac{2k^2+k}{k^2+2k+1} \\
+\amp = 2 
+\end{align*}
+</div>
+<div class="para">So, by the Limit Comparison Test, since the value of the limit is a positve real number, then the two series behave like each other. Since the series <span class="process-math">\(\sum_k\frac{1}{k}\)</span> is known to diverges (Harmonic Series), then it can be concluded that the given series also diverges.</div>
+</div></div></body>
 </html>

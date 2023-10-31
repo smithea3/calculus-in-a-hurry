@@ -223,14 +223,68 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.2",
   "title": "The Comparison Tests",
-  "body": " The Comparison Tests   For each of the following series, determine if the series converges or diverges. You must use a test or a well-known series (i.e. geometric, telescoping, etc.) to prove the convergence AND divergence. If the series is a well-known series that the value of the convergence can be found, then find the value of convergence.         Use the direct comparison test to prove convergence. Note that for all .   Since the Divergence Test is inconclusive, and the series does not look to be easily integrable, we will consider the comparison tests. For this series, the direct comparison test is a good candidate because , which means that . Moreover, we know that converges because it is a geometric series where . Therefore, So, we can conclude by the direct comparison test that also converges.        Note that for all .   The Divergence Test is inconclusive since the summand goes to zero. We could check the convergence\/divergence of this series by the integral test, since the sequence is always positive and monotonically decreasing. However, it is easier to show that since , then . We know that converges because of the p-series test, therefore, by the direct comparison test, also converges.        Use the direct comparison test to prove convergence.   Apply the direct comparison test by comparing the series with a known convergent series.        Use the direct comparison test to prove convergence.   Apply the direct comparison test by comparing the series with a known convergent series.        Use the limit comparison test to prove convergence.   Apply the limit comparison test by finding the limit of the ratio of the given series and a known convergent series.        Use the limit comparison test to prove convergence.   Apply the limit comparison test by finding the limit of the ratio of the given series and a known convergent series.        Use the limit comparison test to prove convergence.   Apply the limit comparison test by finding the limit of the ratio of the given series and a known convergent series.        Use the limit comparison test to prove convergence.   Apply the limit comparison test by finding the limit of the ratio of the given series and a known convergent series.    "
+  "body": " The Comparison Tests   Up to now, we have seen special, well-known series that we have shown to either converge or diverge based on specific conditions. This is not always the case. So, we must develop some more powerful tools in order to determine if a series converges or not.  A word of warning. In the next few sections, as we develop the different types of test for convergence, do not assume that if a test gives a specific number that the number you get is the summation of the series. That is rarely, if ever, the case for convergence tests.    Direct Comparison Test   Direct Comparison Test   Let and be infinite series where . If converges, then also converges. Contrapositively, we can say under the same conditions that if diverges, then also diverges.    It can be helpful to think of this type of comparison in one of two ways: when trying to show that a series converges, then try to find a convergent series that is just a little bit larger than the given series. This way, if the series is a little bit larger, and it is known to converge, then the smaller series must also converge.  Likewise, when trying to show that a series diverges, try to find a divergent series that is a little bit smaller than the given series. This way, if the series is smaller, but diverges to infinity, then the larger series (the given series), must also diverge.  This creates a stop-or-push relationship with the two series. For convergence, try to find a stoping point (larger series) that is known to converge. This will create an upper bound for the given series, and then the convergence can be concluded. For divergence, the goal is to find a series that is smaller and therefore pushing the given series off to infinity.   Use the Direct Comparison Test to show that converges.   To use the Direct Comparison Test to show convergence, the \"stop\" relationship must be considered. Therefore, a series that is larger than the given series, but converges must be found. Since it is true that for all , it is also true that and therefore, . The convergence of is known by the p-series test, and the relationship. So, it can be concluded that also converges by the Direct Comparison Test.     Determine if converges or diverges.   The summand of the given series can be rewritten as . This proves helpful because it is also true that . Therefore, it is true that for all . Additionally, since is known to converge by the p-series test, then the given series must converge also by the Direct Comparison Test.     Determine if converges or diverges using the Direct Comparison Test.   It is good to stop and take note that the summand looks a lot like a geometric series, especially if the denominator did not have the plus four in it. Also, it is true that , which implies that . Since the series is geometric and the common ratio is less than one and it can be concluded that the given series must also converge by the Direct Comparison Test.      Limit Comparison Test   Limit Comparison Test   Let and be series whose terms are positive. Then the following are true:   If , where is a positive real number, then both series either converge or diverge. In other words, they behave the same.    If and converges, then also converges.    If and diverges, then also diverges.        Use the limit comparison test to determine if converges or diverges.   First, it is important to note, and get in the habit of checking, that the divergence test is inconclusive here because the summand, as a sequence, goes to zero. To use the Limit Comparison Test, a sequence must be used that behaves in a similar way that the given series behaves. A closer look at the given series shows that at infinity, the terms of the summand will look a lot like . Therefore, the Harmonic Series is a great candidate to use for this series. So, consider the following limit: So, by the Limit Comparison Test, since the value of the limit is a positve real number, then the two series behave like each other. Since the series is known to diverges (Harmonic Series), then it can be concluded that the given series also diverges.       For each of the following series, determine if the series converges or diverges. You must use a test or a well-known series (i.e. geometric, telescoping, etc.) to prove the convergence AND divergence. If the series is a well-known series that the value of the convergence can be found, then find the value of convergence.        Use the direct comparison test to prove convergence. Note that for all .   Since the Divergence Test is inconclusive, and the series does not look to be easily integrable, we will consider the comparison tests. For this series, the direct comparison test is a good candidate because , which means that . Moreover, we know that converges because it is a geometric series where . Therefore, So, we can conclude by the direct comparison test that also converges.        Note that for all .   The Divergence Test is inconclusive since the summand goes to zero. We could check the convergence\/divergence of this series by the integral test, since the sequence is always positive and monotonically decreasing. However, it is easier to show that since , then . We know that converges because of the p-series test, therefore, by the direct comparison test, also converges.        Use the direct comparison test to prove convergence.   Apply the direct comparison test by comparing the series with a known convergent series.        Use the direct comparison test to prove convergence.   Apply the direct comparison test by comparing the series with a known convergent series.        Use the limit comparison test to prove convergence.   Apply the limit comparison test by finding the limit of the ratio of the given series and a known convergent series.        Use the limit comparison test to prove convergence.   Apply the limit comparison test by finding the limit of the ratio of the given series and a known convergent series.        Use the limit comparison test to prove convergence.   Apply the limit comparison test by finding the limit of the ratio of the given series and a known convergent series.        Use the limit comparison test to prove convergence.   Apply the limit comparison test by finding the limit of the ratio of the given series and a known convergent series.    "
+},
+{
+  "id": "thm-direct-comparison-test",
+  "level": "2",
+  "url": "sec-comparison-test.html#thm-direct-comparison-test",
+  "type": "Theorem",
+  "number": "3.2.1",
+  "title": "Direct Comparison Test.",
+  "body": " Direct Comparison Test   Let and be infinite series where . If converges, then also converges. Contrapositively, we can say under the same conditions that if diverges, then also diverges.   "
+},
+{
+  "id": "example-3",
+  "level": "2",
+  "url": "sec-comparison-test.html#example-3",
+  "type": "Example",
+  "number": "3.2.2",
+  "title": "",
+  "body": " Use the Direct Comparison Test to show that converges.   To use the Direct Comparison Test to show convergence, the \"stop\" relationship must be considered. Therefore, a series that is larger than the given series, but converges must be found. Since it is true that for all , it is also true that and therefore, . The convergence of is known by the p-series test, and the relationship. So, it can be concluded that also converges by the Direct Comparison Test.   "
+},
+{
+  "id": "example-4",
+  "level": "2",
+  "url": "sec-comparison-test.html#example-4",
+  "type": "Example",
+  "number": "3.2.3",
+  "title": "",
+  "body": " Determine if converges or diverges.   The summand of the given series can be rewritten as . This proves helpful because it is also true that . Therefore, it is true that for all . Additionally, since is known to converge by the p-series test, then the given series must converge also by the Direct Comparison Test.   "
+},
+{
+  "id": "example-5",
+  "level": "2",
+  "url": "sec-comparison-test.html#example-5",
+  "type": "Example",
+  "number": "3.2.4",
+  "title": "",
+  "body": " Determine if converges or diverges using the Direct Comparison Test.   It is good to stop and take note that the summand looks a lot like a geometric series, especially if the denominator did not have the plus four in it. Also, it is true that , which implies that . Since the series is geometric and the common ratio is less than one and it can be concluded that the given series must also converge by the Direct Comparison Test.   "
+},
+{
+  "id": "thm-limit-comparison-test",
+  "level": "2",
+  "url": "sec-comparison-test.html#thm-limit-comparison-test",
+  "type": "Theorem",
+  "number": "3.2.5",
+  "title": "Limit Comparison Test.",
+  "body": " Limit Comparison Test   Let and be series whose terms are positive. Then the following are true:   If , where is a positive real number, then both series either converge or diverge. In other words, they behave the same.    If and converges, then also converges.    If and diverges, then also diverges.      "
+},
+{
+  "id": "example-6",
+  "level": "2",
+  "url": "sec-comparison-test.html#example-6",
+  "type": "Example",
+  "number": "3.2.6",
+  "title": "",
+  "body": " Use the limit comparison test to determine if converges or diverges.   First, it is important to note, and get in the habit of checking, that the divergence test is inconclusive here because the summand, as a sequence, goes to zero. To use the Limit Comparison Test, a sequence must be used that behaves in a similar way that the given series behaves. A closer look at the given series shows that at infinity, the terms of the summand will look a lot like . Therefore, the Harmonic Series is a great candidate to use for this series. So, consider the following limit: So, by the Limit Comparison Test, since the value of the limit is a positve real number, then the two series behave like each other. Since the series is known to diverges (Harmonic Series), then it can be concluded that the given series also diverges.   "
 },
 {
   "id": "exercise-17",
   "level": "2",
   "url": "sec-comparison-test.html#exercise-17",
   "type": "Exercise",
-  "number": "3.2.1",
+  "number": "3.2.3.1",
   "title": "",
   "body": "     Use the direct comparison test to prove convergence. Note that for all .   Since the Divergence Test is inconclusive, and the series does not look to be easily integrable, we will consider the comparison tests. For this series, the direct comparison test is a good candidate because , which means that . Moreover, we know that converges because it is a geometric series where . Therefore, So, we can conclude by the direct comparison test that also converges.  "
 },
@@ -239,7 +293,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-comparison-test.html#exercise-18",
   "type": "Exercise",
-  "number": "3.2.2",
+  "number": "3.2.3.2",
   "title": "",
   "body": "     Note that for all .   The Divergence Test is inconclusive since the summand goes to zero. We could check the convergence\/divergence of this series by the integral test, since the sequence is always positive and monotonically decreasing. However, it is easier to show that since , then . We know that converges because of the p-series test, therefore, by the direct comparison test, also converges.  "
 },
@@ -248,7 +302,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-comparison-test.html#exercise-19",
   "type": "Exercise",
-  "number": "3.2.3",
+  "number": "3.2.3.3",
   "title": "",
   "body": "     Use the direct comparison test to prove convergence.   Apply the direct comparison test by comparing the series with a known convergent series.  "
 },
@@ -257,7 +311,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-comparison-test.html#exercise-20",
   "type": "Exercise",
-  "number": "3.2.4",
+  "number": "3.2.3.4",
   "title": "",
   "body": "     Use the direct comparison test to prove convergence.   Apply the direct comparison test by comparing the series with a known convergent series.  "
 },
@@ -266,7 +320,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-comparison-test.html#exercise-21",
   "type": "Exercise",
-  "number": "3.2.5",
+  "number": "3.2.3.5",
   "title": "",
   "body": "     Use the limit comparison test to prove convergence.   Apply the limit comparison test by finding the limit of the ratio of the given series and a known convergent series.  "
 },
@@ -275,7 +329,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-comparison-test.html#exercise-22",
   "type": "Exercise",
-  "number": "3.2.6",
+  "number": "3.2.3.6",
   "title": "",
   "body": "     Use the limit comparison test to prove convergence.   Apply the limit comparison test by finding the limit of the ratio of the given series and a known convergent series.  "
 },
@@ -284,7 +338,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-comparison-test.html#exercise-23",
   "type": "Exercise",
-  "number": "3.2.7",
+  "number": "3.2.3.7",
   "title": "",
   "body": "     Use the limit comparison test to prove convergence.   Apply the limit comparison test by finding the limit of the ratio of the given series and a known convergent series.  "
 },
@@ -293,7 +347,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec-comparison-test.html#exercise-24",
   "type": "Exercise",
-  "number": "3.2.8",
+  "number": "3.2.3.8",
   "title": "",
   "body": "     Use the limit comparison test to prove convergence.   Apply the limit comparison test by finding the limit of the ratio of the given series and a known convergent series.  "
 },
