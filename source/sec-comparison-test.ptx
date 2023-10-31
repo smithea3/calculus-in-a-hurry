@@ -4,13 +4,185 @@
     <title>The Comparison Tests</title>
     <introduction>
         <p>
-            For each of the following series, determine if the series converges or diverges. You
-            must use a test or a well-known series (i.e. geometric, telescoping, etc.) to prove the
-            convergence AND divergence. If the series is a well-known series that the value of the
-            convergence can be found, then find the value of convergence.
+            Up to now, we have seen special, well-known series that we have shown to either 
+            converge or diverge based on specific conditions. This is not always the case.
+            So, we must develop some more powerful tools in order to determine if a 
+            series converges or not. 
+        </p>
+        <p>
+            A word of warning. In the next few sections, as we develop the different types
+            of test for convergence, do not assume that if a test gives a specific number
+            that the number you get is the summation of the series. That is rarely, if ever,
+            the case for convergence tests.
         </p>
     </introduction>
+    <subsection xml:id="subsec-direct-comparison-test">
+        <title>Direct Comparison Test</title>
+
+        <theorem xml:id="thm-direct-comparison-test">
+            <title>Direct Comparison Test</title>
+            <statement>
+                <p>
+                    Let <m>\displaystyle \sum_k a_k</m> and <m>\displaystyle \sum_k b_k</m>
+                    be infinite series where <m>0 \leq a_k \leq b_k</m>. If
+                    <m>\displaystyle \sum_k b_k</m> converges, then <m>\displaystyle \sum_k a_k</m>
+                    also converges. Contrapositively, we can say under the same conditions that 
+                    if <m>\displaystyle \sum_k a_k</m> diverges, then <m>\displaystyle \sum_k b_k</m>
+                    also diverges.
+                </p>
+            </statement>
+        </theorem>
+        
+        <p>
+            It can be helpful to think of this type of comparison in one of two ways: when trying
+            to show that a series converges, then try to find a convergent series that is
+            just a little bit larger than the given series. This way, if the series is a little bit
+            larger, and it is known to converge, then the smaller series must also converge.
+        </p>
+
+        <p>
+            Likewise, when trying to show that a series diverges, try to find a divergent series
+            that is a little bit smaller than the given series. This way, if the series is smaller,
+            but diverges to infinity, then the larger series (the given series), must also diverge.
+        </p>
+        
+        <p>
+            This creates a stop-or-push relationship with the two series. For convergence, try to find a
+            stoping point (larger series) that is known to converge. This will create an upper bound for
+            the given series, and then the convergence can be concluded. For divergence, the goal is to
+            find a series that is smaller and therefore pushing the given series off to infinity.
+        </p>
+
+        <example>
+            <p>
+                Use the Direct Comparison Test to show that 
+                <m>\displaystyle \sum_k\frac{3}{(1+2k)^2}</m> converges.
+            </p>
+            <solution>
+                <p>
+                    To use the Direct Comparison Test to show convergence, the "stop" relationship
+                    must be considered. Therefore, a series that is larger than the given series,
+                    but converges must be found. Since it is true that <m>3k^2 &lt; (1+2k)^2 </m>
+                    for all <m>k &gt; 1</m>, it is also true that <m>\frac{3}{(1+2k)^2} &lt; \frac{1}{k^2}</m>
+                    and therefore, <m>\displaystyle\sum_k \frac{3}{(1+2k)^2} &lt; \sum_k\frac{1}{k^2}</m>.
+                    The convergence of <m>\displaystyle \sum_k\frac{1}{k^2}</m> is known by the p-series
+                    test, and the relationship. So, it can be concluded that <m>\displaystyle\sum_k \frac{3}{(1+2k)^2}</m>
+                    also converges by the Direct Comparison Test.
+
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <p>
+                Determine if <m>\displaystyle \sum_k \left(\frac{\sin(k)}{k}\right)^4</m> converges
+                or diverges.
+            </p>
+            <solution>
+                <p>
+                    The summand of the given series can be rewritten as 
+                    <m>\displaystyle \sum_k\frac{\sin^4(k)}{k^4}</m>. This proves helpful because it is also
+                    true that <m>0 \leq \sin^4(x)\leq 1</m>. Therefore, it is true that 
+                    <m>\displaystyle \frac{\sin^4(k)}{k^4} \leq \frac{1}{k^4}</m> for all <m>k &gt; 1</m>. Additionally,
+                    since <m>\displaystyle \sum_k \frac{1}{k^4}</m> is known to converge by the p-series 
+                    test, then the given series must converge also by the Direct Comparison Test.
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <p>
+                Determine if <m>\displaystyle \sum_{k=1}^\infty \frac{11^k}{4+18^k}</m> converges or
+                diverges using the Direct Comparison Test.
+            </p>
+            <solution>
+                <p>
+                    It is good to stop and take note that the summand looks a lot like a geometric
+                    series, especially if the denominator did not have the plus four in it. Also,
+                    it is true that <m>18^k &lt; 4+18^k</m>, which implies that 
+                    <m>\displaystyle \frac{1}{4+18^k} &lt; \frac{1}{18^k}</m>. Since the series
+                    <m>\displaystyle \sum_{k=1}^\infty \frac{1}{18^k}</m> is geometric and the 
+                    common ratio is less than one and 
+                    <m>\displaystyle \sum_{k=1}^\infty\frac{1}{4+18^k} &lt; \sum_{k=1}^\infty\frac{1}{18^k}</m> 
+                    it can be concluded that the given series must also converge by the Direct Comparison Test. 
+                </p>
+            </solution>
+        </example>
+    </subsection>
+
+    <subsection xml:id="subsec-limit-comparison-test">
+        <title>Limit Comparison Test</title>
+        <theorem xml:id="thm-limit-comparison-test">
+            <title>Limit Comparison Test</title>
+            <statement>
+                <p>
+                    Let <m>\displaystyle \sum_k a_k</m> and <m>\displaystyle \sum_k b_k</m> be series
+                    whose terms are positive. Then the following are true:
+                    <ol>
+                        <li>
+                            <p>
+                                If <m>\displaystyle\lim_{k\to\infty}\frac{a_k}{b_k}=L</m>, where <m>L</m> is a 
+                                positive real number, then both series either converge or diverge. 
+                                In other words, they behave the same.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                If <m>\displaystyle\lim_{k\to\infty}\frac{a_k}{b_k}=0</m> and <m>\displaystyle \sum_k b_k</m>
+                                converges, then <m>\displaystyle \sum_k a_k</m> also converges.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                If <m>\displaystyle\lim_{k\to\infty}\frac{a_k}{b_k}=\infty</m> and <m>\displaystyle \sum_k b_k</m>
+                                diverges, then <m>\displaystyle \sum_k a_k</m> also diverges.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </theorem>
+
+        <example>
+            <p>
+                Use the limit comparison test to determine if 
+                <m>\displaystyle \sum_{k=1}^\infty\frac{2k+1}{k^2+2k+1}</m> converges or diverges.
+            </p>
+            <solution>
+                <p>
+                    First, it is important to note, and get in the habit of checking, that the 
+                    divergence test is inconclusive here because the summand, as a sequence, goes
+                    to zero. To use the Limit Comparison Test, a sequence must be used that behaves in a 
+                    similar way that the given series behaves. A closer look at the given series 
+                    shows that at infinity, the terms of the summand will look a lot like 
+                    <m>\frac{1}{k}</m>. Therefore, the Harmonic Series is a great candidate to use 
+                    for this series. So, consider the following limit:
+                    <md>
+                        <mrow>\lim_{k\to\infty}\frac{a_k}{b_k} \amp = \lim_{k\to\infty}\frac{\frac{2k+1}{k^2+2k+1}}{\frac{1}{k}} </mrow>
+                        <mrow> \amp = \lim_{k\to\infty}\frac{2k+1}{k^2+2k+1}\cdot\frac{k}{1} </mrow>
+                        <mrow> \amp = \lim_{k\to\infty}\frac{2k^2+k}{k^2+2k+1} </mrow>
+                        <mrow> \amp = 2 </mrow>
+                    </md>
+                    So, by the Limit Comparison Test, since the value of the limit is a positve real
+                    number, then the two series behave like each other. Since the series 
+                    <m>\sum_k\frac{1}{k}</m> is known to diverges (Harmonic Series),
+                    then it can be concluded that the given series also diverges.
+                </p>
+            </solution>
+        </example>
+        
+    </subsection>
+
+
     <exercises>
+        <introduction>
+            <p>
+                For each of the following series, determine if the series converges or diverges. You
+                must use a test or a well-known series (i.e. geometric, telescoping, etc.) to prove the
+                convergence AND divergence. If the series is a well-known series that the value of the
+                convergence can be found, then find the value of convergence.
+            </p>
+        </introduction>
         <exercise>
             <statement>
                 <p>
@@ -56,8 +228,8 @@
                     check the convergence/divergence of this series by the integral test,
                     since the sequence is always positive and monotonically decreasing. However,
                     it is easier to show that since <m>n^2 &lt; (n+1)^2 \Rightarrow \frac{1}{(n+1)^2} &lt; \frac{1}{n^2}</m>, 
-                    then <m>\sum_{n=1}^{\infty}\frac{1}{(n+1)^2} &lt; \sum_{n=1}^{\infty}\frac{1}{n+^2}</m>.
-                    We know that <m>\sum_{n=1}^{\infty}\frac{1}{n+^2}</m> converges because of the p-series
+                    then <m>\sum_{n=1}^{\infty}\frac{1}{(n+1)^2} &lt; \sum_{n=1}^{\infty}\frac{1}{n^2}</m>.
+                    We know that <m>\sum_{n=1}^{\infty}\frac{1}{n^2}</m> converges because of the p-series
                     test, therefore, by the direct comparison test, <m>\sum_{n=1}^{\infty}\frac{1}{(n+1)^2}</m>
                     also converges.
                 </p>
