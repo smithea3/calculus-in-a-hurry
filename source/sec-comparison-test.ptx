@@ -53,7 +53,7 @@
             <solution>
                 <p>
                     The Divergence Test is inconclusive since the summand goes to zero. We could
-                    theck the convergence/divergence of this series by the integral test,
+                    check the convergence/divergence of this series by the integral test,
                     since the sequence is always positive and monotonically decreasing. However,
                     it is easier to show that since <m>n^2 &lt; (n+1)^2 \Rightarrow \frac{1}{(n+1)^2} &lt; \frac{1}{n^2}</m>, 
                     then <m>\sum_{n=1}^{\infty}\frac{1}{(n+1)^2} &lt; \sum_{n=1}^{\infty}\frac{1}{n+^2}</m>.
