@@ -47,12 +47,19 @@
             </statement>
             <hint>
                 <p>
-                    Use the direct comparison test to prove convergence.
+                    Note that <m>n^2 &lt; (n+1)^2</m> for all <m>n \geq 1</m>.
                 </p>
             </hint>
             <solution>
                 <p>
-                    Apply the direct comparison test by comparing the series with a known convergent series.
+                    The Divergence Test is inconclusive since the summand goes to zero. We could
+                    theck the convergence/divergence of this series by the integral test,
+                    since the sequence is always positive and monotonically decreasing. However,
+                    it is easier to show that since <m>n^2 &lt; (n+1)^2 \Rightarrow \frac{1}{(n+1)^2} &lt; \frac{1}{n^2}</m>, 
+                    then <m>\sum_{n=1}^{\infty}\frac{1}{(n+1)^2} &lt; \sum_{n=1}^{\infty}\frac{1}{n+^2}</m>.
+                    We know that <m>\sum_{n=1}^{\infty}\frac{1}{n+^2}</m> converges because of the p-series
+                    test, therefore, by the direct comparison test, <m>\sum_{n=1}^{\infty}\frac{1}{(n+1)^2}</m>
+                    also converges.
                 </p>
             </solution>
         </exercise>
