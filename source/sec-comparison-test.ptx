@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-comparison-test">
+    <title>The Comparison Tests</title>
+    <introduction>
+        <p>
+            For each of the following series, determine if the series converges or diverges. You
+            must use a test or a well-known series (i.e. geometric, telescoping, etc.) to prove the
+            convergence AND divergence. If the series is a well-known series that the value of the
+            convergence can be found, then find the value of convergence.
+        </p>
+    </introduction>
+    <exercises>
+        <exercise>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{k=1}^{\infty}\frac{1}{2^k + k}</m>
+                </p>
+            </statement>
+            <hint>
+                <p>
+                    Use the direct comparison test to prove convergence. Note that 
+                    <m>2^k &lt; 2^k + k</m> for all <m>k &gt; 1</m>.
+                </p>
+            </hint>
+            <solution>
+                <p>
+                    Since the Divergence Test is inconclusive, and the series does not look
+                    to be easily integrable, we will consider the comparison tests. For this
+                    series, the direct comparison test is a good candidate because 
+                    <m>2^k &lt; 2^k + k</m>, which means that <m>\frac{1}{2^k+k} &lt; \frac{1}{2^k}</m>.
+                    Moreover, we know that <m>\sum_{k=1}^{\infty}\frac{1}{2^k}</m> converges
+                    because it is a geometric series where <m>r=1/2</m>. Therefore, 
+                    <me>
+                        \sum_{k=1}^{\infty}\frac{1}{2^k + k}\leq\sum_{k=1}^{\infty}\frac{1}{2^k} = 1
+                    </me>
+                    So, we can conclude by the direct comparison test that <m>\sum_{k=1}^{\infty}\frac{1}{2^k + k}</m>
+                    also converges.
+                </p>
+            </solution>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{n=1}^{\infty}\frac{1}{(n+1)^2}</m>
+                </p>
+            </statement>
+            <hint>
+                <p>
+                    Use the direct comparison test to prove convergence.
+                </p>
+            </hint>
+            <solution>
+                <p>
+                    Apply the direct comparison test by comparing the series with a known convergent series.
+                </p>
+            </solution>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{\theta=0}^{\infty}\frac{1+\cos(\theta)}{10^\theta}</m>
+                </p>
+            </statement>
+            <hint>
+                <p>
+                    Use the direct comparison test to prove convergence.
+                </p>
+            </hint>
+            <solution>
+                <p>
+                    Apply the direct comparison test by comparing the series with a known convergent series.
+                </p>
+            </solution>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{k=0}^{\infty}\frac{k!}{(k+1)!}</m>
+                </p>
+            </statement>
+            <hint>
+                <p>
+                    Use the direct comparison test to prove convergence.
+                </p>
+            </hint>
+            <solution>
+                <p>
+                    Apply the direct comparison test by comparing the series with a known convergent series.
+                </p>
+            </solution>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{k=0}^{\infty}\frac{k-2}{k\sqrt{k}}</m>
+                </p>
+            </statement>
+            <hint>
+                <p>
+                    Use the limit comparison test to prove convergence.
+                </p>
+            </hint>
+            <solution>
+                <p>
+                    Apply the limit comparison test by finding the limit of the ratio of the given series and a known convergent series.
+                </p>
+            </solution>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{n=0}^{\infty}\frac{\sqrt[n]{e}}{n}</m>
+                </p>
+            </statement>
+            <hint>
+                <p>
+                    Use the limit comparison test to prove convergence.
+                </p>
+            </hint>
+            <solution>
+                <p>
+                    Apply the limit comparison test by finding the limit of the ratio of the given series and a known convergent series.
+                </p>
+            </solution>
+        </exercise>        
+        <exercise>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{n=0}^{\infty}\frac{n!}{n^n}</m>
+                </p>
+            </statement>
+            <hint>
+                <p>
+                    Use the limit comparison test to prove convergence.
+                </p>
+            </hint>
+            <solution>
+                <p>
+                    Apply the limit comparison test by finding the limit of the ratio of the given series and a known convergent series.
+                </p>
+            </solution>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{n=0}^{\infty}\frac{n!}{n^n}</m>
+                </p>
+            </statement>
+            <hint>
+                <p>
+                    Use the limit comparison test to prove convergence.
+                </p>
+            </hint>
+            <solution>
+                <p>
+                    Apply the limit comparison test by finding the limit of the ratio of the given series and a known convergent series.
+                </p>
+            </solution>
+        </exercise>
+        
+    </exercises>
+</section>

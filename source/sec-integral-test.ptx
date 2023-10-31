@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-integral-test">
+    <title>The Integral Test</title>
+    <introduction>
+        <p>
+            For each of the following series, determine if the series converges or diverges. You
+            must use a test or a well-known series (i.e. geometric, telescoping, etc.) to prove the
+            convergence AND divergence. If the series is a well-known series that the value of the
+            convergence can be found, then find the value of convergence.
+        </p>
+    </introduction>
+    <exercises>
+        <exercise>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{k=1}^{\infty}\frac{1}{8^k}</m>
+                </p>
+            </statement>
+            <hint>
+                <p>
+                    The series is geometric.
+                </p>
+            </hint>
+            <solution>
+                <p>
+                    The series is geometric; therefore, it converges since <m>r=1/8</m>, which is 
+                    less than one. The value to which the series converges to is
+                    <md>
+                        <mrow>\frac{a_0}{1-r} \amp=\frac{1/8}{1-1/8} </mrow>
+                        <mrow> \amp= \frac{1}{7} </mrow>
+                    </md>
+                </p>
+            </solution>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{k=1}^{\infty}\frac{8}{\sqrt{k}}</m>
+                </p>
+            </statement>
+            <hint>
+                <p>
+                    The series is not geometric or telescoping and looks easily integrable.
+                </p>
+            </hint>
+            <solution>
+                <p>
+                    First, we check if the Divergence Test provides any information about the 
+                    series. Since the sequence is always positive and monotonically 
+                    decreasing, we can apply the Integral Test. Consider the integral
+                    <md>
+                        <mrow>\int_1^\infty \frac{8}{\sqrt{k}}\,dx\amp=\lim_{b\to\infty}\int_1^b\frac{8}{\sqrt{k}}\,dx</mrow>
+                        <mrow> \amp = \lim_{b\to\infty} </mrow>
+                    </md>
+                </p>
+            </solution>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{k=1}^{\infty}\frac{7}{\sqrt[3]{k+1}}</m>
+                </p>
+            </statement>
+            <hint>
+                <p>
+                    The series involves a power function.
+                </p>
+            </hint>
+            <solution>
+                <p>
+                    This series is a p-series with <m>p=\frac{1}{3}</m>, and it converges since <m>p &gt; 1</m>.
+                </p>
+            </solution>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{k=1}^{\infty}\frac{1}{{\ln(5)}^k}</m>
+                </p>
+            </statement>
+            <hint>
+                <p>
+                    The series is a geometric series.
+                </p>
+            </hint>
+            <solution>
+                <p>
+                    This series is geometric; therefore, it converges since 
+                    <m>r=\frac{1}{{\ln(5)}}</m>, which is less than one. Therefore, the series 
+                    converges to the value of 
+                    <md>
+                        <mrow>\frac{a_0}{1-r} \amp = \frac{1/\ln(5)}{1-\ln(5)} </mrow>
+                        <mrow> \amp = \frac{1}{\ln(5)-1} </mrow>
+                    </md>
+                </p>
+            </solution>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{k=1}^{\infty} k^2e^{-k}</m>
+                </p>
+            </statement>
+            <hint>
+                <p>
+                    The series is always positive, eventually monotonically decreasing, and
+                    can be integrated using Integration by Parts.
+                </p>
+            </hint>
+            <solution>
+                <p>
+                    To find convergence, we first check that conditions of the Divergence Test.
+                    Since the sequence of the summand goes to zero, the Divergence Test is
+                    inconclusive. Next, we consider the conditions of the Integral Test. The 
+                    sequence is always positive, and if <m>k>3</m>, then the sequence is
+                    monotonically decreasing. Therefore, we can apply the Integral Test.
+                    <md>
+                        <mrow> \int_{k=1}^{\infty} x^2e^{-x}\,dx \amp = \lim_{b\to\infty}\int_{1}^{b} x^2e^{-x}\,dx</mrow>
+                        <mrow> \amp = \lim_{b\to\infty}\left[-e^{-x}x^2-2e^{-x}x-2e^{-x}\right]_{1}^{b} </mrow>
+                    </md>
+                    Since each piece of the antiderivative contains a <m>e^{-x}</m> term, the 
+                    values at infinity will be zero. Therefore, the only parts that remain are when
+                    <m>x=1</m>, which is <m>5e^{-1}</m>. Since the integral converges, we can 
+                    conclude that the series also converges by the Integral Test.
+                </p>
+            </solution>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{k=1}^{\infty}\frac{3k}{k^2+4}</m>
+                </p>
+            </statement>
+            <hint>
+                <p>
+                    The series is always positive, eventually monotonically decreasing, and
+                    can be integrated using u-substitution.
+                </p>
+            </hint>
+            <solution>
+                <p>
+                    To find convergence, we first check that conditions of the Divergence Test.
+                    Since the sequence of the summand goes to zero, the Divergence Test is
+                    inconclusive. Next, we consider the conditions of the Integral Test. The 
+                    sequence is always positive and always monotonically decreasing. Therefore, 
+                    we can apply the Integral Test.
+                    <md>
+                        <mrow> \int_{k=1}^{\infty} \frac{3x}{x^2+4}\,dx \amp = \lim_{b\to\infty}\int_{1}^{b} \frac{3x}{x^2+4}\,dx</mrow>
+                        <mrow> \amp = \lim_{b\to\infty}\left[\frac{3}{2}\ln(x^2+4)\right]_{1}^{b} </mrow>
+                    </md>
+                    Since the values of the argument of the natrual logarithim are always increasing,
+                    the logarithim is, therefore, always increasing. So, this limit goes to 
+                    infinity. This means that the improper integral diverges. Therefore, by the
+                    integral thest, the series also diverges.
+                </p>
+            </solution>
+        </exercise>
+        
+    </exercises>
+</section>

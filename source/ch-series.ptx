@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ch-series">
+    <title>Series</title>
+    <introduction>
+        In this chapter, we introduce the concept of a series and define convergence and divergence of a series. 
+    </introduction>
+    <xi:include href="sec-integral-test.ptx" />
+    <xi:include href="sec-comparison-test.ptx" />
+</chapter>
