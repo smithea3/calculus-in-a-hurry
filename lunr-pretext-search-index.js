@@ -358,7 +358,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.3",
   "title": "The Ratio and Root Test",
-  "body": " The Ratio and Root Test   For each of the following series, determine if the series converges or diverges. You must use a test or a well-known series (i.e. geometric, telescoping, etc.) to prove the convergence AND divergence. If the series is a well-known series that the value of the convergence can be found, then find the value of convergence.                                                                                                             "
+  "body": " The Ratio and Root Test      For each of the following series, determine if the series converges or diverges. You must use a test or a well-known series (i.e. geometric, telescoping, etc.) to prove the convergence AND divergence. If the series is a well-known series that the value of the convergence can be found, then find the value of convergence.                                                                                                            "
 },
 {
   "id": "exercise-25",
@@ -433,6 +433,87 @@ var ptx_lunr_docs = [
   "body": "            "
 },
 {
+  "id": "section-7",
+  "level": "1",
+  "url": "section-7.html",
+  "type": "Section",
+  "number": "3.4",
+  "title": "Alternating Series Test",
+  "body": " Alternating Series Test    For each of the following series, determine if the series converges or diverges. You must use a test or a well-known series (i.e. geometric, telescoping, etc.) to prove the convergence AND divergence. If the series is a well-known series that the value of the convergence can be found, then find the value of convergence.                                                                                                            "
+},
+{
+  "id": "exercise-33",
+  "level": "2",
+  "url": "section-7.html#exercise-33",
+  "type": "Exercise",
+  "number": "3.4.1",
+  "title": "",
+  "body": "            "
+},
+{
+  "id": "exercise-34",
+  "level": "2",
+  "url": "section-7.html#exercise-34",
+  "type": "Exercise",
+  "number": "3.4.2",
+  "title": "",
+  "body": "            "
+},
+{
+  "id": "exercise-35",
+  "level": "2",
+  "url": "section-7.html#exercise-35",
+  "type": "Exercise",
+  "number": "3.4.3",
+  "title": "",
+  "body": "            "
+},
+{
+  "id": "exercise-36",
+  "level": "2",
+  "url": "section-7.html#exercise-36",
+  "type": "Exercise",
+  "number": "3.4.4",
+  "title": "",
+  "body": "            "
+},
+{
+  "id": "exercise-37",
+  "level": "2",
+  "url": "section-7.html#exercise-37",
+  "type": "Exercise",
+  "number": "3.4.5",
+  "title": "",
+  "body": "            "
+},
+{
+  "id": "exercise-38",
+  "level": "2",
+  "url": "section-7.html#exercise-38",
+  "type": "Exercise",
+  "number": "3.4.6",
+  "title": "",
+  "body": "            "
+},
+{
+  "id": "exercise-39",
+  "level": "2",
+  "url": "section-7.html#exercise-39",
+  "type": "Exercise",
+  "number": "3.4.7",
+  "title": "",
+  "body": "            "
+},
+{
+  "id": "exercise-40",
+  "level": "2",
+  "url": "section-7.html#exercise-40",
+  "type": "Exercise",
+  "number": "3.4.8",
+  "title": "",
+  "body": "            "
+},
+{
   "id": "ws-rational-expressions",
   "level": "1",
   "url": "ws-rational-expressions.html",
@@ -451,45 +532,45 @@ var ptx_lunr_docs = [
   "body": "  Insert objective here.   "
 },
 {
-  "id": "exercise-33",
+  "id": "exercise-41",
   "level": "2",
-  "url": "ws-rational-expressions.html#exercise-33",
+  "url": "ws-rational-expressions.html#exercise-41",
   "type": "Worksheet Exercise",
   "number": "4.1.1",
   "title": "",
   "body": " Does the following image illustrate a function?       "
 },
 {
-  "id": "exercise-34",
+  "id": "exercise-42",
   "level": "2",
-  "url": "ws-rational-expressions.html#exercise-34",
+  "url": "ws-rational-expressions.html#exercise-42",
   "type": "Worksheet Exercise",
   "number": "4.1.2",
   "title": "",
   "body": " Does the following image illustrate a function?       "
 },
 {
-  "id": "exercise-35",
+  "id": "exercise-43",
   "level": "2",
-  "url": "ws-rational-expressions.html#exercise-35",
+  "url": "ws-rational-expressions.html#exercise-43",
   "type": "Worksheet Exercise",
   "number": "4.1.3",
   "title": "",
   "body": " Does the following image illustrate a function?       "
 },
 {
-  "id": "exercise-36",
+  "id": "exercise-44",
   "level": "2",
-  "url": "ws-rational-expressions.html#exercise-36",
+  "url": "ws-rational-expressions.html#exercise-44",
   "type": "Worksheet Exercise",
   "number": "4.1.4",
   "title": "",
   "body": " Does the following image illustrate a function?       "
 },
 {
-  "id": "exercise-37",
+  "id": "exercise-45",
   "level": "2",
-  "url": "ws-rational-expressions.html#exercise-37",
+  "url": "ws-rational-expressions.html#exercise-45",
   "type": "Worksheet Exercise",
   "number": "4.1.5",
   "title": "",
