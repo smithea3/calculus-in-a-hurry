@@ -8,4 +8,5 @@
     <xi:include href="sec-integral-test.ptx" />
     <xi:include href="sec-comparison-test.ptx" />
     <xi:include href="sec-ratio-and-root-test.ptx" />
+    <xi:include href="sec-alternating-series-test.ptx" />
 </chapter>

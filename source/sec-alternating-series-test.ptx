@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="sec-ratio-and-root-test">
-    <title>The Ratio and Root Test</title>
-    <introduction>
-        
-    </introduction>
+<section id="sec-alternating-series-test">
+    <title>Alternating Series Test</title>
     <exercises>
         <introduction>
             <p>
@@ -14,11 +11,10 @@
                 convergence can be found, then find the value of convergence.
             </p>
         </introduction>
-        
         <exercise>
             <statement>
                 <p>
-                    <m>\displaystyle \sum_{k=1}^{\infty} \frac{1}{k!}</m>
+                    <m>\displaystyle \sum_{k=0}^{\infty}\frac{(-1)^k}{2k+1}</m>
                 </p>
             </statement>
             <hint>
@@ -32,10 +28,11 @@
                 </p>
             </solution>
         </exercise>
+    
         <exercise>
             <statement>
                 <p>
-                    <m>\displaystyle \sum_{n=1}^{\infty} \frac{3^n}{(n+1)!}</m>
+                    <m>\displaystyle \sum_{n=1}^{\infty}\left((-1)^n\left(\frac{n}{3+n}\right)^n\right)</m>
                 </p>
             </statement>
             <hint>
@@ -49,27 +46,11 @@
                 </p>
             </solution>
         </exercise>
+
         <exercise>
             <statement>
                 <p>
-                    <m>\displaystyle \sum_{k=1}^\infty k^4 2^{-k}</m>
-                </p>
-            </statement>
-            <hint>
-                <p>
-                    <!-- Hint: Add hint for the third series here -->
-                </p>
-            </hint>
-            <solution>
-                <p>
-                    <!-- Solution: Add solution for the third series here -->
-                </p>
-            </solution>
-        </exercise>
-        <exercise>
-            <statement>
-                <p>
-                    <m>\displaystyle \sum_{k=0}^{\infty} \frac{(k!)^2}{(2k)!}</m>
+                    <m>\displaystyle \sum_{k=0}^{\infty}\frac{(-1)^k}{k^2+10}</m>
                 </p>
             </statement>
             <hint>
@@ -83,10 +64,11 @@
                 </p>
             </solution>
         </exercise>
+    
         <exercise>
             <statement>
                 <p>
-                    <m>\displaystyle \sum_{k=1}^{\infty} \left(\frac{k^2-2k+3}{7k^3+k-111} \right)^k</m>
+                    <m>\displaystyle \sum_{k=0}^{\infty}\left((-1)^{k+1}\frac{(k!)^3}{(3k)!}\right)</m>
                 </p>
             </statement>
             <hint>
@@ -100,10 +82,11 @@
                 </p>
             </solution>
         </exercise>
+    
         <exercise>
             <statement>
                 <p>
-                    <m>\displaystyle \sum_{k=1}^{\infty} \left(1+\frac{2}{n}\right)^{n^2}</m>
+                    <m>\displaystyle \sum_{k=0}^{\infty}\left((-1)^k\frac{k^2-2k+3}{7k^3+k-111}\right)</m>
                 </p>
             </statement>
             <hint>
@@ -117,10 +100,11 @@
                 </p>
             </solution>
         </exercise>
+    
         <exercise>
             <statement>
                 <p>
-                    <m>\displaystyle \sum_{k=1}^{\infty} \left(\frac{n}{n+2}\right)^{3n^2}</m>
+                    <m>\displaystyle \sum_{n=1}^{\infty}\left(-\frac{1}{e}\right)^n</m>
                 </p>
             </statement>
             <hint>
@@ -134,10 +118,11 @@
                 </p>
             </solution>
         </exercise>
+    
         <exercise>
             <statement>
                 <p>
-                    <m>\displaystyle \sum_{k=1}^{\infty} \left(\sqrt[k]{k}-1\right)^{5k}</m>
+                    <m>\displaystyle \sum_{n=1}^{\infty}\frac{(-1)^{n+1}}{\ln(n)}</m>
                 </p>
             </statement>
             <hint>
@@ -150,7 +135,25 @@
                     <!-- Solution: Add solution for the sixth series here -->
                 </p>
             </solution>
-        </exercise>        
-        
+        </exercise>
+    
+        <exercise>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{k=0}^{\infty}\left(-\frac{2k+\cos((k+1)\pi)}{k+1}\right)</m>
+                </p>
+            </statement>
+            <hint>
+                <p>
+                    <!-- Hint: Add hint for the seventh series here -->
+                </p>
+            </hint>
+            <solution>
+                <p>
+                    <!-- Solution: Add solution for the seventh series here -->
+                </p>
+            </solution>
+        </exercise>
     </exercises>
+
 </section>
