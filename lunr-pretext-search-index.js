@@ -352,6 +352,87 @@ var ptx_lunr_docs = [
   "body": "     Use the limit comparison test to prove convergence.   Apply the limit comparison test by finding the limit of the ratio of the given series and a known convergent series.  "
 },
 {
+  "id": "sec-ratio-and-root-test",
+  "level": "1",
+  "url": "sec-ratio-and-root-test.html",
+  "type": "Section",
+  "number": "3.3",
+  "title": "The Ratio and Root Test",
+  "body": " The Ratio and Root Test   For each of the following series, determine if the series converges or diverges. You must use a test or a well-known series (i.e. geometric, telescoping, etc.) to prove the convergence AND divergence. If the series is a well-known series that the value of the convergence can be found, then find the value of convergence.                                                                                                             "
+},
+{
+  "id": "exercise-25",
+  "level": "2",
+  "url": "sec-ratio-and-root-test.html#exercise-25",
+  "type": "Exercise",
+  "number": "3.3.1",
+  "title": "",
+  "body": "            "
+},
+{
+  "id": "exercise-26",
+  "level": "2",
+  "url": "sec-ratio-and-root-test.html#exercise-26",
+  "type": "Exercise",
+  "number": "3.3.2",
+  "title": "",
+  "body": "            "
+},
+{
+  "id": "exercise-27",
+  "level": "2",
+  "url": "sec-ratio-and-root-test.html#exercise-27",
+  "type": "Exercise",
+  "number": "3.3.3",
+  "title": "",
+  "body": "            "
+},
+{
+  "id": "exercise-28",
+  "level": "2",
+  "url": "sec-ratio-and-root-test.html#exercise-28",
+  "type": "Exercise",
+  "number": "3.3.4",
+  "title": "",
+  "body": "            "
+},
+{
+  "id": "exercise-29",
+  "level": "2",
+  "url": "sec-ratio-and-root-test.html#exercise-29",
+  "type": "Exercise",
+  "number": "3.3.5",
+  "title": "",
+  "body": "            "
+},
+{
+  "id": "exercise-30",
+  "level": "2",
+  "url": "sec-ratio-and-root-test.html#exercise-30",
+  "type": "Exercise",
+  "number": "3.3.6",
+  "title": "",
+  "body": "            "
+},
+{
+  "id": "exercise-31",
+  "level": "2",
+  "url": "sec-ratio-and-root-test.html#exercise-31",
+  "type": "Exercise",
+  "number": "3.3.7",
+  "title": "",
+  "body": "            "
+},
+{
+  "id": "exercise-32",
+  "level": "2",
+  "url": "sec-ratio-and-root-test.html#exercise-32",
+  "type": "Exercise",
+  "number": "3.3.8",
+  "title": "",
+  "body": "            "
+},
+{
   "id": "ws-rational-expressions",
   "level": "1",
   "url": "ws-rational-expressions.html",
@@ -370,45 +451,45 @@ var ptx_lunr_docs = [
   "body": "  Insert objective here.   "
 },
 {
-  "id": "exercise-25",
+  "id": "exercise-33",
   "level": "2",
-  "url": "ws-rational-expressions.html#exercise-25",
+  "url": "ws-rational-expressions.html#exercise-33",
   "type": "Worksheet Exercise",
   "number": "4.1.1",
   "title": "",
   "body": " Does the following image illustrate a function?       "
 },
 {
-  "id": "exercise-26",
+  "id": "exercise-34",
   "level": "2",
-  "url": "ws-rational-expressions.html#exercise-26",
+  "url": "ws-rational-expressions.html#exercise-34",
   "type": "Worksheet Exercise",
   "number": "4.1.2",
   "title": "",
   "body": " Does the following image illustrate a function?       "
 },
 {
-  "id": "exercise-27",
+  "id": "exercise-35",
   "level": "2",
-  "url": "ws-rational-expressions.html#exercise-27",
+  "url": "ws-rational-expressions.html#exercise-35",
   "type": "Worksheet Exercise",
   "number": "4.1.3",
   "title": "",
   "body": " Does the following image illustrate a function?       "
 },
 {
-  "id": "exercise-28",
+  "id": "exercise-36",
   "level": "2",
-  "url": "ws-rational-expressions.html#exercise-28",
+  "url": "ws-rational-expressions.html#exercise-36",
   "type": "Worksheet Exercise",
   "number": "4.1.4",
   "title": "",
   "body": " Does the following image illustrate a function?       "
 },
 {
-  "id": "exercise-29",
+  "id": "exercise-37",
   "level": "2",
-  "url": "ws-rational-expressions.html#exercise-29",
+  "url": "ws-rational-expressions.html#exercise-37",
   "type": "Worksheet Exercise",
   "number": "4.1.5",
   "title": "",
