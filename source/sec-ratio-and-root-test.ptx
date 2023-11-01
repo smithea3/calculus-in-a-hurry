@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-ratio-and-root-test">
+    <title>The Ratio and Root Test</title>
+    <introduction>
+        <p>
+            For each of the following series, determine if the series converges or diverges. You
+            must use a test or a well-known series (i.e. geometric, telescoping, etc.) to prove the
+            convergence AND divergence. If the series is a well-known series that the value of the
+            convergence can be found, then find the value of convergence.
+        </p>
+    </introduction>
+    <exercises>
+        <exercise>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{k=1}^{\infty} \frac{1}{k!}</m>
+                </p>
+            </statement>
+            <hint>
+                <p>
+                    <!-- Hint: Add hint for the first series here -->
+                </p>
+            </hint>
+            <solution>
+                <p>
+                    <!-- Solution: Add solution for the first series here -->
+                </p>
+            </solution>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{n=1}^{\infty} \frac{3^n}{(n+1)!}</m>
+                </p>
+            </statement>
+            <hint>
+                <p>
+                    <!-- Hint: Add hint for the second series here -->
+                </p>
+            </hint>
+            <solution>
+                <p>
+                    <!-- Solution: Add solution for the second series here -->
+                </p>
+            </solution>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{k=1}^\infty k^4 2^{-k}</m>
+                </p>
+            </statement>
+            <hint>
+                <p>
+                    <!-- Hint: Add hint for the third series here -->
+                </p>
+            </hint>
+            <solution>
+                <p>
+                    <!-- Solution: Add solution for the third series here -->
+                </p>
+            </solution>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{k=0}^{\infty} \frac{(k!)^2}{(2k)!}</m>
+                </p>
+            </statement>
+            <hint>
+                <p>
+                    <!-- Hint: Add hint for the second series here -->
+                </p>
+            </hint>
+            <solution>
+                <p>
+                    <!-- Solution: Add solution for the second series here -->
+                </p>
+            </solution>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{k=1}^{\infty} \left(\frac{k^2-2k+3}{7k^3+k-111} \right)^k</m>
+                </p>
+            </statement>
+            <hint>
+                <p>
+                    <!-- Hint: Add hint for the third series here -->
+                </p>
+            </hint>
+            <solution>
+                <p>
+                    <!-- Solution: Add solution for the third series here -->
+                </p>
+            </solution>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{k=1}^{\infty} \left(1+\frac{2}{n}\right)^{n^2}</m>
+                </p>
+            </statement>
+            <hint>
+                <p>
+                    <!-- Hint: Add hint for the fourth series here -->
+                </p>
+            </hint>
+            <solution>
+                <p>
+                    <!-- Solution: Add solution for the fourth series here -->
+                </p>
+            </solution>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{k=1}^{\infty} \left(\frac{n}{n+2}\right)^{3n^2}</m>
+                </p>
+            </statement>
+            <hint>
+                <p>
+                    <!-- Hint: Add hint for the fifth series here -->
+                </p>
+            </hint>
+            <solution>
+                <p>
+                    <!-- Solution: Add solution for the fifth series here -->
+                </p>
+            </solution>
+        </exercise>
+        <exercise>
+            <statement>
+                <p>
+                    <m>\displaystyle \sum_{k=1}^{\infty} \left(\sqrt[k]{k}-1\right)^{5k}</m>
+                </p>
+            </statement>
+            <hint>
+                <p>
+                    <!-- Hint: Add hint for the sixth series here -->
+                </p>
+            </hint>
+            <solution>
+                <p>
+                    <!-- Solution: Add solution for the sixth series here -->
+                </p>
+            </solution>
+        </exercise>        
+        
+    </exercises>
+</section>
