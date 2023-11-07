@@ -15,7 +15,17 @@
 <h4 class="heading">
 <span class="type">Solution</span><span class="space"> </span><span class="codenumber">3.2.3.4.1</span><span class="period">.</span>
 </h4>
-<div class="para">Apply the direct comparison test by comparing the series with a known convergent series.</div>
+<div class="para logical">
+<div class="para">Using the recursive definition of the factorial, we can simplify the summand as follows: <span class="process-math">\(\displaystyle \frac{k!}{(k+1)!}=\frac{k!}{(k+1)k!}=\frac{1}{k+1}\text{.}\)</span> Using this information, we can rewrite the series as <span class="process-math">\(\displaystyle \sum_{k=0}^\infty\frac{1}{k+1}\text{.}\)</span> This series is a candidate for the <a href="" class="xref" data-knowl="./knowl/thm-limit-comparison-test.html" title="Theorem 3.2.5: Limit Comparison Test">Theorem 3.2.5</a>: the Limit Comparison Test. Choose <span class="process-math">\(b_k=\frac{1}{k}\text{,}\)</span> then</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/thm-limit-comparison-test.html">
+\begin{align*}
+\lim_{k\to\infty}\frac{a_k}{b_k} \amp =\lim_{k\to\infty}\frac{\frac{1}{k+1}}{\frac{1}{k}} \\
+\amp = \lim_{k\to\infty}\frac{k}{k+1} \\
+\amp = 1 
+\end{align*}
+</div>
+<div class="para">Therefore, since the limit is a positive real number, and the series <span class="process-math">\(\sum_k b_k\)</span> diverges, then so does the given series.</div>
+</div>
 </div>
 <span class="incontext"><a href="sec-comparison-test.html#solution-33" class="internal">in-context</a></span>
 </body>
