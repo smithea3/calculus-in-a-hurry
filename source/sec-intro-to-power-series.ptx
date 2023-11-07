@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<section xml:id="sec-into-to-power-series">
+    <title>Introduction to Power Series</title>
+    <introduction>
+        <p>
+            This section provides an introduction to the concept of a power series. A full definition
+            of a Power Series is developed, along with the conditions under which a power series
+            converges to a function. 
+        </p>
+    </introduction>
+    <subsection xml:id="subsec-power-series-centered-at-zero">
+        <title>Power Series Centered at Zero</title>
+        <p>
+            Consider the following definition of a power series that is centered at zero.
+        </p>
+        <definition xml:id="def-power-series-centered-at-zero">
+            <statement>
+                <p>
+                    Let <m>\{a_k\}_k</m> be a sequence and <m>x</m> be a variable, then
+                    <me>
+                        \sum_{k=0}^\infty a_kx^k=a_0+a_1x+a_2x^2+x_3x^3+\cdots+a_kx^k+\cdots
+                    </me>
+                    is called a <term>power series</term>.
+                </p>
+            </statement>
+        </definition>
+        <remark>
+            <p>
+                One of the most pabis power series (centered at zero) occurs when <m>\{a_k=1\}</m>, which
+            is the power series
+            <me>
+                \sum_{k=0}^\infty x^k=1+x+x^2+x^3+\cdots+x^k+\cdots
+            </me>
+            A closer look at this series shows that it is nearly identical to the geometric series, 
+            where the common ratio is the variable <m>x</m>. Therefore, this series will converge when
+            <m>|x| &lt; 1</m>, which can also be written as <m>-1 \leq x \leq 1</m> or
+            <m>x\in(-1, 1)</m>.
+            </p>
+            <p>
+                Furthermore, now only do we know that a geometric series converges when the conditions 
+                of the common ratio are satisfied, we also know to what the geometric series converges.
+                In this case, we can then state that if <m>|x| &lt; 1</m>, then
+                <me>
+                    \sum_{k=0}^\infty x^k=1+x+x^2+x^3+\cdots+x^k+\cdots = \frac{1}{1-x}.
+                </me>
+            </p>
+        </remark>
+        <p> 
+            When studying power series, and later when we apply power series to other things, we want
+            to determine for what values of x will the power series converge. We do this by connecting
+            it back to the geometric series. Remember that the geometric series converges when <m>|r| &lt; 1</m>. 
+            So, it would be only natural that we look at the absolute convergence of the power series 
+            and determine for what values of <m>x</m> the power series converges absolutely. 
+        </p> 
+
+        <example>
+            <statement>
+                <p>
+                    Determine the value of <m>x</m> for which the series 
+                    <m>\displaystyle \sum_{k=0}^\infty\frac{1}{1+2^k}x^k</m>
+                    converges.
+                </p>
+            </statement>
+        </example>
+    </subsection>
+</section>
