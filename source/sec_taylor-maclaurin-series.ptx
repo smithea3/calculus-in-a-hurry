@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_taylor-and-maclaurin-series">
+    <title>Tylor and Maclaurin Series</title>
+    <theorem xml:id="thm_taylors-series-theorem">
+        <statement>
+            <p>
+                Let <m>f</m> be an <m>n</m>-times differentiable function where all of the derivatives
+                of <m>f</m> are defined at a value <m>x_0=c</m>. Then we can express the function 
+                <m>f</m> as a series by
+                <me xml:id="eqn_taylors-theorem-equation">
+                    f(x)=\sum_{k=0}^\infty\frac{f^{(k)}(a)}{k!}(x-c)^k
+                </me>
+            </p>
+        </statement>
+    </theorem>
+    
+    <p>
+        Although it looks a little complicated, the idea and process of calculating a Taylor series
+        requires a bit of computation, but a lot of patter recognition. To start, it is easier to 
+        look at what is known as a Taylor Polynoimal, which is just a finite number of terms of the
+        series, rather than the infinite series itself. To that end, consider the following example.
+    </p>
+    <example>
+        <statement>
+            <p>
+                Construct a third-degree Taylor polynomial of <m>f(x)=e^x</m> centered at <m>c=1</m>.
+            </p>
+        </statement>
+        <solution>
+            <p>
+                To construct the third-degree Taylor Polynomial for the function, it is perhaps best
+                to consider a table of values that calculates <m>\displaystyle f^{(k)}(c)</m>, 
+                <m>k!</m> to easily determine the value of <m>\displaystyle \frac{f^{(k)}(c)}{k!}</m>.
+                These will be the coefficients of the polynomial.
+            </p>
+            <tabular>
+                <row header="yes" bottom="major">
+                    <cell><m>k</m></cell>
+                    <cell><m>f^{(k)}(c)</m></cell>
+                    <cell><m>k!</m></cell>
+                    <cell><m>\displaystyle \frac{f^{(k)}(c)}{k!}</m></cell>
+                </row>
+                <row>
+                    <cell><m>0</m></cell>
+                    <cell><m>e^1</m></cell>
+                    <cell><m>1</m></cell>
+                    <cell><m>\frac{e}{1}</m></cell>
+                </row>
+                <row>
+                    <cell><m>0</m></cell>
+                    <cell><m>e^1</m></cell>
+                    <cell><m>1</m></cell>
+                    <cell><m>\frac{e}{1}</m></cell>
+                </row>
+                <row>
+                    <cell><m>0</m></cell>
+                    <cell><m>e^1</m></cell>
+                    <cell><m>2</m></cell>
+                    <cell><m>\frac{e}{2}</m></cell>
+                </row>
+                <row>
+                    <cell><m>0</m></cell>
+                    <cell><m>e^1</m></cell>
+                    <cell><m>6</m></cell>
+                    <cell><m>\frac{e}{6}</m></cell>
+                </row>
+            </tabular>
+            <p>
+                Using this table, we can assemble the polynomial to be
+                <me>
+                    P_4(x)=e+e(x-1)+\frac{e}{1}(x-1)^2+\frac{e}{6}(x-1)^3
+                </me>
+            </p>
+        </solution>
+    </example>
+</section>

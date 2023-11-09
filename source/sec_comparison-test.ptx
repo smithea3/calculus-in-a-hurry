@@ -16,7 +16,7 @@
             the case for convergence tests.
         </p>
     </introduction>
-    <subsection xml:id="subsec-direct-comparison-test">
+    <subsection xml:id="subsec_direct-comparison-test">
         <title>Direct Comparison Test</title>
 
         <theorem xml:id="thm-direct-comparison-test">
