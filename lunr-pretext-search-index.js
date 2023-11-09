@@ -559,6 +559,33 @@ var ptx_lunr_docs = [
   "body": "  Determine the value of for which the series converges.   "
 },
 {
+  "id": "sec_taylor-and-maclaurin-series",
+  "level": "1",
+  "url": "sec_taylor-and-maclaurin-series.html",
+  "type": "Section",
+  "number": "5.2",
+  "title": "Tylor and Maclaurin Series",
+  "body": " Tylor and Maclaurin Series    Let be an -times differentiable function where all of the derivatives of are defined at a value . Then we can express the function as a series by     Although it looks a little complicated, the idea and process of calculating a Taylor series requires a bit of computation, but a lot of patter recognition. To start, it is easier to look at what is known as a Taylor Polynoimal, which is just a finite number of terms of the series, rather than the infinite series itself. To that end, consider the following example.    Construct a third-degree Taylor polynomial of centered at .    To construct the third-degree Taylor Polynomial for the function, it is perhaps best to consider a table of values that calculates , to easily determine the value of . These will be the coefficients of the polynomial.                                  Using this table, we can assemble the polynomial to be     "
+},
+{
+  "id": "thm_taylors-series-theorem",
+  "level": "2",
+  "url": "sec_taylor-and-maclaurin-series.html#thm_taylors-series-theorem",
+  "type": "Theorem",
+  "number": "5.2.1",
+  "title": "",
+  "body": "  Let be an -times differentiable function where all of the derivatives of are defined at a value . Then we can express the function as a series by    "
+},
+{
+  "id": "example-8",
+  "level": "2",
+  "url": "sec_taylor-and-maclaurin-series.html#example-8",
+  "type": "Example",
+  "number": "5.2.2",
+  "title": "",
+  "body": "  Construct a third-degree Taylor polynomial of centered at .    To construct the third-degree Taylor Polynomial for the function, it is perhaps best to consider a table of values that calculates , to easily determine the value of . These will be the coefficients of the polynomial.                                  Using this table, we can assemble the polynomial to be    "
+},
+{
   "id": "ws-rational-expressions",
   "level": "1",
   "url": "ws-rational-expressions.html",

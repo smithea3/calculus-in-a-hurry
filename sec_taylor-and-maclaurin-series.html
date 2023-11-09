@@ -8,7 +8,7 @@
 <html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Basics of Integrals</title>
+<title>Tylor and Maclaurin Series</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -106,7 +106,7 @@ window.MathJax = {
 <ol id="searchresults" class="searchresults"></ol>
 </div>
 </div>
-<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="colophon-1.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="my-great-book.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="section-1.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\R}{\mathbb R}
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-into-to-power-series.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-power-series.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="ch-review-exercises.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\R}{\mathbb R}
 \newcommand{\Z}{\mathbb Z}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
@@ -117,7 +117,7 @@ window.MathJax = {
 <div class="ptx-page">
 <div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural contains-active toc-item-list">
 <li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
-<li class="toc-item toc-chapter active">
+<li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ch_basicsOfIntegrals.html" class="internal"><span class="codenumber">1</span> <span class="title">Basics of Integrals</span></a></div>
 <ul class="structural toc-item-list"><li class="toc-item toc-section"><div class="toc-title-box"><a href="section-1.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Summation Notation</span></a></div></li></ul>
 </li>
@@ -157,14 +157,14 @@ window.MathJax = {
 </li>
 </ul>
 </li>
-<li class="toc-item toc-chapter">
+<li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="ch-power-series.html" class="internal"><span class="codenumber">5</span> <span class="title">Power Series</span></a></div>
-<ul class="structural toc-item-list">
+<ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-into-to-power-series.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Introduction to Power Series</span></a></div>
 <ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-into-to-power-series.html#subsec-power-series-centered-at-zero" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Power Series Centered at Zero</span></a></div></li></ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_taylor-and-maclaurin-series.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Tylor and Maclaurin Series</span></a></div></li>
+<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec_taylor-and-maclaurin-series.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Tylor and Maclaurin Series</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
@@ -172,12 +172,69 @@ window.MathJax = {
 <ul class="structural toc-item-list"><li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="ws-rational-expressions.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Functions and Transformations Worksheet</span></a></div></li></ul>
 </li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="chapter" id="ch_basicsOfIntegrals"><h2 class="heading">
-<span class="type">Chapter</span><span class="space"> </span><span class="codenumber">1</span><span class="space"> </span><span class="title">Basics of Integrals</span>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec_taylor-and-maclaurin-series"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">5.2</span><span class="space"> </span><span class="title">Tylor and Maclaurin Series</span>
 </h2>
-<section class="introduction" id="introduction-1">Even though this book is meant for those who are in a hurry to understand calculus, it is important to slow down sometimes and look at a concept deeply. The next concept—Riemann Sums—is a good example. However, if you’re truly in that big of a hurry to get to the calculus of integrals, you can skip to the next chapter to start calculating integrals using helpful tricks similar to how derivatives were calculated. Before we get started, we need to learn some new notation that will be useful for writing certain calculations.</section><nav class="summary-links"><ul><li><a href="section-1.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Summation Notation</span></a></li></ul></nav></section></div>
+<article class="theorem theorem-like" id="thm_taylors-series-theorem"><h3 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.2.1</span><span class="period">.</span>
+</h3>
+<div class="para logical" id="p-185">
+<div class="para">Let <span class="process-math">\(f\)</span> be an <span class="process-math">\(n\)</span>-times differentiable function where all of the derivatives of <span class="process-math">\(f\)</span> are defined at a value <span class="process-math">\(x_0=c\text{.}\)</span> Then we can express the function <span class="process-math">\(f\)</span> as a series by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f(x)=\sum_{k=0}^\infty\frac{f^{(k)}(a)}{k!}(x-c)^k
+\end{equation*}
+</div>
+</div></article><div class="para" id="p-186">Although it looks a little complicated, the idea and process of calculating a Taylor series requires a bit of computation, but a lot of patter recognition. To start, it is easier to look at what is known as a Taylor Polynoimal, which is just a finite number of terms of the series, rather than the infinite series itself. To that end, consider the following example.</div>
+<article class="example example-like" id="example-8"><a href="" data-knowl="" class="id-ref example-knowl original has-tabular" data-refid="hk-example-8"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.2.2</span><span class="period">.</span>
+</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-8"><article class="example example-like"><div class="para" id="p-187">Construct a third-degree Taylor polynomial of <span class="process-math">\(f(x)=e^x\)</span> centered at <span class="process-math">\(c=1\text{.}\)</span>
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-tabular" data-refid="hk-solution-54" id="solution-54"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-54"><div class="solution solution-like">
+<div class="para" id="p-188">To construct the third-degree Taylor Polynomial for the function, it is perhaps best to consider a table of values that calculates <span class="process-math">\(\displaystyle f^{(k)}(c)\text{,}\)</span> <span class="process-math">\(k!\)</span> to easily determine the value of <span class="process-math">\(\displaystyle \frac{f^{(k)}(c)}{k!}\text{.}\)</span> These will be the coefficients of the polynomial.</div> <div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b3 r0 l0 t0 lines"><span class="process-math">\(k\)</span></th>
+<th scope="col" class="l m b3 r0 l0 t0 lines"><span class="process-math">\(f^{(k)}(c)\)</span></th>
+<th scope="col" class="l m b3 r0 l0 t0 lines"><span class="process-math">\(k!\)</span></th>
+<th scope="col" class="l m b3 r0 l0 t0 lines"><span class="process-math">\(\displaystyle \frac{f^{(k)}(c)}{k!}\)</span></th>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(0\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(e^1\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(1\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\frac{e}{1}\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(0\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(e^1\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(1\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\frac{e}{1}\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(0\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(e^1\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(2\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\frac{e}{2}\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(0\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(e^1\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(6\)</span></td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\frac{e}{6}\)</span></td>
+</tr>
+</table></div> <div class="para logical" id="p-189">
+<div class="para">Using this table, we can assemble the polynomial to be</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P_4(x)=e+e(x-1)+\frac{e}{1}(x-1)^2+\frac{e}{6}(x-1)^3
+\end{equation*}
+</div>
+</div>
+</div></div>
+</div></article></div></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="colophon-1.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="section-1.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="sec-into-to-power-series.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-review-exercises.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
