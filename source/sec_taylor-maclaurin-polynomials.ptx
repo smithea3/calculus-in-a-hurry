@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_taylor-and-maclaurin-polynomials">
+    <title_taylor and Maclaurin Polynomials</title>
+    <theorem xml:id="thm-taylors-series-theorem">
+        <statement>
+            <p>
+                Let <m>f</m> be an <m>n</m>-times differentiable function where all of the derivatives
+                of <m>f</m> are defined at a value <m>x_0=c</m>. Then we can express the function 
+                <m>f</m> as a series by
+                <me>
+                    \sum_{k=0}^\infty\frac{f^{(k)(a)}}{k!}(x-c)^k
+                </me>
+                
+            </p>
+        </statement>
+    </theorem>
+    
+</section>
