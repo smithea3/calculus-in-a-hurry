@@ -1,16 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<section xml:id="sec-integral-test">
+<section xml:id="sec_integral-test">
     <title>The Integral Test</title>
-    <introduction>
+    <p>
+        The previous sections in this chapter have shown the fundamentals of series. Now, the 
+        question that will be addressed is: does this series converge or diverge? To answer
+        this question, mathematicians have created "tests" that help to determine if a series
+        converges or diverges.
+    </p>
+    <remark xml:id="remark_test-of-convergence-does-not-give-value">
         <p>
-            For each of the following series, determine if the series converges or diverges. You
-            must use a test or a well-known series (i.e. geometric, telescoping, etc.) to prove the
-            convergence AND divergence. If the series is a well-known series that the value of the
-            convergence can be found, then find the value of convergence.
+            This will be said quite a few times in this section, but the results of the tests 
+            developed in this section DO NOT give the value to which a series converges. It is like
+            a test you might take a doctor's office. For example, you might go to the doctor feeling
+            under the weather and they test you for the flu. The test says you are positive for the 
+            flu, but the test does not tell you which specific strand of the flu you have. Testing
+            for convergence is nearly the same idea: the test will determine if it converges, but
+            it will not tell you the value to which it converges. For that, the idea of a 
+            <term>power series</term> is needed.
         </p>
-    </introduction>
+    </remark>
     <exercises>
+        <introduction>
+            <p>
+                For each of the following series, determine if the series converges or diverges. You
+                must use a test or a well-known series (i.e. geometric, telescoping, etc.) to prove the
+                convergence AND divergence. If the series is a well-known series that the value of the
+                convergence can be found, then find the value of convergence.
+            </p>
+        </introduction>
         <exercise>
             <statement>
                 <p>

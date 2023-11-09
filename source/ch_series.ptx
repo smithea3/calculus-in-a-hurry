@@ -5,8 +5,8 @@
     <introduction>
         In this chapter, we introduce the concept of a series and define convergence and divergence of a series. 
     </introduction>
-    <xi:include href="sec-integral-test.ptx" />
-    <xi:include href="sec-comparison-test.ptx" />
-    <xi:include href="sec-ratio-and-root-test.ptx" />
-    <xi:include href="sec-alternating-series-test.ptx" />
+    <xi:include href="sec_integral-test.ptx" />
+    <xi:include href="sec_comparison-test.ptx" />
+    <xi:include href="sec_ratio-and-root-test.ptx" />
+    <xi:include href="sec_alternating-series-test.ptx" />
 </chapter>

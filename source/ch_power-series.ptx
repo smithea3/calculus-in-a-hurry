@@ -2,5 +2,5 @@
 
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ch-power-series">
     <title>Power Series</title>
-    <xi:include href="sec-intro-to-power-series.ptx" />
+    <xi:include href="sec_intro-to-power-series.ptx" />
 </chapter>

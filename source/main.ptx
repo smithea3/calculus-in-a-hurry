@@ -22,12 +22,15 @@
 
     <xi:include href="ch_basics-of-integration.ptx" />
 
-    <xi:include href="ch-sequences.ptx" />
+    <xi:include href="ch_differential-equations.ptx" />
 
-    <xi:include href="ch-series.ptx" />
+    <xi:include href="ch_sequences.ptx" />
 
-    <xi:include href="ch-review-exercises.ptx" />
+    <xi:include href="ch_series.ptx" />
 
-    <xi:include href="ch-power-series.ptx" />
+    <xi:include href="ch_power-series.ptx" />
+
+    <xi:include href="ch_review-exercises.ptx" />
+
   </book>
 </pretext>
