@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ch_calculus-of-polar-curves">
+    <title>Calculus of Polar Curves</title>
+    <introduction>
+        Introduction here.
+    </introduction>
+    <xi:include href="sec_polar-calculus-area-and-arc-length.ptx" />
+</chapter>

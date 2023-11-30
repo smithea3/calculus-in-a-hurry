@@ -30,6 +30,8 @@
 
     <xi:include href="ch_power-series.ptx" />
 
+    <xi:include href="ch_calculus-of-polar-curves.ptx" />
+
     <xi:include href="ch_review-exercises.ptx" />
 
   </book>

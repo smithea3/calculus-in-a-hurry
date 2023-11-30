@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="sec_polar-calculus-area-and-arc-length">
+    <title>Area and Arc Length of Polar Curves</title>
+    <introduction>
+    </introduction>
+
+    <exercises>
+        <exercise>
+            <statement>
+                <p>Sketch the graph of <m>r=4-4\sin\theta</m> and find the area of the region enclosed by it.</p>
+            </statement>
+        </exercise>
+
+        <exercise>
+            <statement>
+                <p>
+                    Find the length of the polar curve <m>r=\theta</m> from <m>\theta=0</m> to 
+                    <m>\theta=2\pi</m>.
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise>
+            <statement>
+                <p>
+                    Find the length of the polar curve <m>r=e^{0.125\theta}</m> from <m>\theta=0</m> to 
+                    <m>\theta=3\pi</m>.
+                </p>
+            </statement>
+        </exercise>
+
+        <exercise>
+            <statement>
+                <p>
+                    Find the area inside the circle <m>r=5\cos\theta</m> and outside the curve 
+                    <m>r=2+\cos\theta</m>.
+                </p>
+            </statement>
+        </exercise>
+    </exercises>
+</section>
