@@ -592,7 +592,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "6.1",
   "title": "Area and Arc Length of Polar Curves",
-  "body": " Area and Arc Length of Polar Curves      Sketch the graph of and find the area of the region enclosed by it.    Find the length of the polar curve from to .    Find the length of the polar curve from to .    Find the area inside the circle and outside the curve .    "
+  "body": " Area and Arc Length of Polar Curves      Sketch the graph of and find the area of the region enclosed by it.   Below is the graph of the polar curve.     Notice tha the curve has symmetry about the rectangular -axis. Therefore, to calculate the area, the left or right area is sufficient and then can be multiplied by two. To find the angle for which the curve is at the lower apex and the cusp of the graph, the equations and need to be solved.  The resulting angles obtained from solving these equations are and . It is important to notice that the use of the angle in this case is avoided because of the clockwise way in which the graph of the polar curve is traveling.  Therefore, the integral that calculates the total area would be     Find the length of the polar curve from to .     Find the length of the polar curve from to .    Find the area inside the circle and outside the curve .    "
 },
 {
   "id": "exercise-41",
@@ -601,7 +601,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "6.1.1",
   "title": "",
-  "body": " Sketch the graph of and find the area of the region enclosed by it.  "
+  "body": " Sketch the graph of and find the area of the region enclosed by it.   Below is the graph of the polar curve.     Notice tha the curve has symmetry about the rectangular -axis. Therefore, to calculate the area, the left or right area is sufficient and then can be multiplied by two. To find the angle for which the curve is at the lower apex and the cusp of the graph, the equations and need to be solved.  The resulting angles obtained from solving these equations are and . It is important to notice that the use of the angle in this case is avoided because of the clockwise way in which the graph of the polar curve is traveling.  Therefore, the integral that calculates the total area would be   "
 },
 {
   "id": "exercise-42",
@@ -610,7 +610,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "6.1.2",
   "title": "",
-  "body": " Find the length of the polar curve from to .  "
+  "body": " Find the length of the polar curve from to .   "
 },
 {
   "id": "exercise-43",
