@@ -18,6 +18,14 @@
                     <m>\theta=2\pi</m>.
                 </p>
             </statement>
+            <solution>
+                <sageplot>
+                    graph = polar_plot(4-4*sin(x), (x, 0, 2*pi))
+
+                    for i in [1..10]:
+                        graph += polar_plot(i, (x, 0, 2*pi))
+                </sageplot>
+            </solution>
         </exercise>
 
         <exercise>
