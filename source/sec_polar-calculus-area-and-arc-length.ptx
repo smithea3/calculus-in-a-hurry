@@ -9,6 +9,50 @@
             <statement>
                 <p>Sketch the graph of <m>r=4-4\sin\theta</m> and find the area of the region enclosed by it.</p>
             </statement>
+            <solution>
+                <p>
+                    Below is the graph of the polar curve.
+                </p>             
+                <image>
+                    <sageplot>
+                        maxRadius = 9;
+                        graph = polar_plot(4-4*sin(x), (x, 0, 2*pi))
+
+                        for i in [1..maxRadius]:
+                            graph += polar_plot(i, (x, 0, 2*pi), thickness=0.25, alpha = 0.25,color=Color("black"))
+                            
+                        for i in [0, pi/6, pi/3, -pi/6, -pi/3, pi/4, -pi/4, pi/12, -pi/12, 5*pi/12, -5*pi/12]:
+                            print(i)
+                            graph+=plot(tan(i)*x, (x,-10,10), thickness=0.25, alpha = 0.25, color=Color("black"), xmin=-maxRadius, xmax=maxRadius, ymin=-maxRadius, ymax=maxRadius)
+
+                        graph
+                    </sageplot>
+                </image>
+                <p>
+                    Notice tha the curve has symmetry about the rectangular <m>x</m>-axis. Therefore,
+                    to calculate the area, the left or right area is sufficient and then can be 
+                    multiplied by two. To find the angle for which the curve is at the lower apex
+                    and the cusp of the graph, the equations <m>4-4\sin\theta=0</m> and
+                    <m>4-4\sin\theta=8</m> need to be solved.
+                </p>
+
+                <p>
+                    The resulting angles obtained from solving these equations are <m>\theta=\pi/2</m>
+                    and <m>\theta=-\pi/2</m>. It is important to notice that the use of the angle 
+                    <m>\theta=3\pi/2</m> in this case is avoided because of the clockwise way in 
+                    which the graph of the polar curve is traveling.
+                </p>
+                
+                <p>
+                    Therefore, the integral that calculates the <em>total</em> area would be
+                    <md>
+                        <mrow>A &amp;= 2\cdot\frac{1}{2}\int_{-\pi/2}^{\pi/2}\left(4-4\sin\theta\right)^2\,d\theta</mrow>
+                        <mrow> \amp = \int_{-\pi/2}^{\pi/2}\left(4-4\sin\theta\right)^2 \, d\theta </mrow>
+                        <mrow> \amp = 16\int_{-\pi/2}^{\pi/2}\left(1-\sin\theta\right)^2 \, d\theta</mrow>
+                        <mrow> \amp = 16\int_{-\pi/2}^{\pi/2}\left(1-2\sin\theta+\sin^2\theta\right) \, d\theta</mrow>
+                    </md>
+                </p>
+            </solution>
         </exercise>
 
         <exercise>
@@ -19,12 +63,6 @@
                 </p>
             </statement>
             <solution>
-                <sageplot>
-                    graph = polar_plot(4-4*sin(x), (x, 0, 2*pi))
-
-                    for i in [1..10]:
-                        graph += polar_plot(i, (x, 0, 2*pi))
-                </sageplot>
             </solution>
         </exercise>
 
