@@ -586,11 +586,56 @@ var ptx_lunr_docs = [
   "body": "  Construct a third-degree Taylor polynomial of centered at .    To construct the third-degree Taylor Polynomial for the function, it is perhaps best to consider a table of values that calculates , to easily determine the value of . These will be the coefficients of the polynomial.                                  Using this table, we can assemble the polynomial to be    "
 },
 {
+  "id": "sec_polar-calculus-area-and-arc-length",
+  "level": "1",
+  "url": "sec_polar-calculus-area-and-arc-length.html",
+  "type": "Section",
+  "number": "6.1",
+  "title": "Area and Arc Length of Polar Curves",
+  "body": " Area and Arc Length of Polar Curves      Sketch the graph of and find the area of the region enclosed by it.    Find the length of the polar curve from to .    Find the length of the polar curve from to .    Find the area inside the circle and outside the curve .    "
+},
+{
+  "id": "exercise-41",
+  "level": "2",
+  "url": "sec_polar-calculus-area-and-arc-length.html#exercise-41",
+  "type": "Exercise",
+  "number": "6.1.1",
+  "title": "",
+  "body": " Sketch the graph of and find the area of the region enclosed by it.  "
+},
+{
+  "id": "exercise-42",
+  "level": "2",
+  "url": "sec_polar-calculus-area-and-arc-length.html#exercise-42",
+  "type": "Exercise",
+  "number": "6.1.2",
+  "title": "",
+  "body": " Find the length of the polar curve from to .  "
+},
+{
+  "id": "exercise-43",
+  "level": "2",
+  "url": "sec_polar-calculus-area-and-arc-length.html#exercise-43",
+  "type": "Exercise",
+  "number": "6.1.3",
+  "title": "",
+  "body": " Find the length of the polar curve from to .  "
+},
+{
+  "id": "exercise-44",
+  "level": "2",
+  "url": "sec_polar-calculus-area-and-arc-length.html#exercise-44",
+  "type": "Exercise",
+  "number": "6.1.4",
+  "title": "",
+  "body": " Find the area inside the circle and outside the curve .  "
+},
+{
   "id": "ws-rational-expressions",
   "level": "1",
   "url": "ws-rational-expressions.html",
   "type": "Worksheet",
-  "number": "6.1",
+  "number": "7.1",
   "title": "Functions and Transformations Worksheet",
   "body": " Functions and Transformations Worksheet    Insert objective here.    Functions are an essential part of mathematics and have a wide range of applications in the real world. In this worksheet, we will explore the concept of functions and their transformations. We will learn how to graph different types of functions and how to apply various transformations to them.    Does the following image illustrate a function?         Does the following image illustrate a function?         Does the following image illustrate a function?           Does the following image illustrate a function?         Does the following equation represent a function?    "
 },
@@ -599,52 +644,52 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "ws-rational-expressions.html#objectives-1",
   "type": "Objectives",
-  "number": "6.1",
+  "number": "7.1",
   "title": "",
   "body": "  Insert objective here.   "
-},
-{
-  "id": "exercise-41",
-  "level": "2",
-  "url": "ws-rational-expressions.html#exercise-41",
-  "type": "Worksheet Exercise",
-  "number": "6.1.1",
-  "title": "",
-  "body": " Does the following image illustrate a function?       "
-},
-{
-  "id": "exercise-42",
-  "level": "2",
-  "url": "ws-rational-expressions.html#exercise-42",
-  "type": "Worksheet Exercise",
-  "number": "6.1.2",
-  "title": "",
-  "body": " Does the following image illustrate a function?       "
-},
-{
-  "id": "exercise-43",
-  "level": "2",
-  "url": "ws-rational-expressions.html#exercise-43",
-  "type": "Worksheet Exercise",
-  "number": "6.1.3",
-  "title": "",
-  "body": " Does the following image illustrate a function?       "
-},
-{
-  "id": "exercise-44",
-  "level": "2",
-  "url": "ws-rational-expressions.html#exercise-44",
-  "type": "Worksheet Exercise",
-  "number": "6.1.4",
-  "title": "",
-  "body": " Does the following image illustrate a function?       "
 },
 {
   "id": "exercise-45",
   "level": "2",
   "url": "ws-rational-expressions.html#exercise-45",
   "type": "Worksheet Exercise",
-  "number": "6.1.5",
+  "number": "7.1.1",
+  "title": "",
+  "body": " Does the following image illustrate a function?       "
+},
+{
+  "id": "exercise-46",
+  "level": "2",
+  "url": "ws-rational-expressions.html#exercise-46",
+  "type": "Worksheet Exercise",
+  "number": "7.1.2",
+  "title": "",
+  "body": " Does the following image illustrate a function?       "
+},
+{
+  "id": "exercise-47",
+  "level": "2",
+  "url": "ws-rational-expressions.html#exercise-47",
+  "type": "Worksheet Exercise",
+  "number": "7.1.3",
+  "title": "",
+  "body": " Does the following image illustrate a function?       "
+},
+{
+  "id": "exercise-48",
+  "level": "2",
+  "url": "ws-rational-expressions.html#exercise-48",
+  "type": "Worksheet Exercise",
+  "number": "7.1.4",
+  "title": "",
+  "body": " Does the following image illustrate a function?       "
+},
+{
+  "id": "exercise-49",
+  "level": "2",
+  "url": "ws-rational-expressions.html#exercise-49",
+  "type": "Worksheet Exercise",
+  "number": "7.1.5",
   "title": "",
   "body": " Does the following equation represent a function?  "
 }
